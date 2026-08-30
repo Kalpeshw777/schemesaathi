@@ -1,0 +1,3654 @@
+[
+  {
+    "id": "CP0001",
+    "name": "Bank of India, Pune Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.8,
+    "address": "Plot 109, Nehru Marg, near Collectorate",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110381",
+    "phone": "+91 9432789647",
+    "lat": 18.5673,
+    "lng": 73.5775
+  },
+  {
+    "id": "CP0002",
+    "name": "State Bank of India, Pune Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.8,
+    "address": "Plot 109, Market Yard, near Old Post Office",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110634",
+    "phone": "+91 8340443634",
+    "lat": 18.2641,
+    "lng": 73.7212
+  },
+  {
+    "id": "CP0003",
+    "name": "Kotak Mahindra Bank, Pune",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 5.4,
+    "address": "Plot 190, Station Road, near Old Post Office",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110398",
+    "phone": "+91 7623163003",
+    "lat": 18.7446,
+    "lng": 73.5904
+  },
+  {
+    "id": "CP0004",
+    "name": "Mahindra Finance — Pune",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.1,
+    "address": "Plot 247, Nehru Marg, near Bus Stand",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110720",
+    "phone": "+91 7080968429",
+    "lat": 18.6489,
+    "lng": 74.1127
+  },
+  {
+    "id": "CP0005",
+    "name": "Indian Bank, Pune Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11.7,
+    "address": "Plot 241, Gandhi Nagar, near Railway Station",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110557",
+    "phone": "+91 9269189150",
+    "lat": 18.6898,
+    "lng": 73.7622
+  },
+  {
+    "id": "CP0006",
+    "name": "Central Bank of India, Pune Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.7,
+    "address": "Plot 33, MG Road, near Collectorate",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110226",
+    "phone": "+91 7940056647",
+    "lat": 18.7977,
+    "lng": 73.705
+  },
+  {
+    "id": "CP0007",
+    "name": "State Bank of India, Pune Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.7,
+    "address": "Plot 197, Cantonment Area, near Main Market",
+    "city": "Pune",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "pincode": "110472",
+    "phone": "+91 8240521290",
+    "lat": 18.7648,
+    "lng": 73.6091
+  },
+  {
+    "id": "CP0011",
+    "name": "Maharashtra SC/ST Development Corporation (Nagpur)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.6,
+    "address": "Plot 33, Subhash Chowk, near Collectorate",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "111754",
+    "phone": "+91 7924287513",
+    "lat": 21.302,
+    "lng": 78.8233
+  },
+  {
+    "id": "CP0012",
+    "name": "Axis Bank, Nagpur",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.7,
+    "address": "Plot 141, Market Yard, near Bus Stand",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "111473",
+    "phone": "+91 8560678637",
+    "lat": 20.9937,
+    "lng": 79.2693
+  },
+  {
+    "id": "CP0013",
+    "name": "Bank of Baroda, Nagpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.9,
+    "address": "Plot 150, Market Yard, near Old Post Office",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "111889",
+    "phone": "+91 7715600560",
+    "lat": 21.1588,
+    "lng": 78.964
+  },
+  {
+    "id": "CP0014",
+    "name": "Bajaj Finserv — Nagpur",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 8,
+    "address": "Plot 216, Station Road, near Bus Stand",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "111676",
+    "phone": "+91 7262057138",
+    "lat": 21.0491,
+    "lng": 79.0014
+  },
+  {
+    "id": "CP0015",
+    "name": "Maharashtra SC/ST Development Corporation (Nagpur)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.9,
+    "address": "Plot 121, Station Road, near Civil Hospital",
+    "city": "Nagpur",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "111669",
+    "phone": "+91 9587507788",
+    "lat": 20.984,
+    "lng": 79.1705
+  },
+  {
+    "id": "CP0021",
+    "name": "Spandana Sphoorty — Mumbai",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 8.8,
+    "address": "Plot 225, Market Yard, near Old Post Office",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "112551",
+    "phone": "+91 8766595471",
+    "lat": 19.3191,
+    "lng": 72.8278
+  },
+  {
+    "id": "CP0022",
+    "name": "State Bank of India, Mumbai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11.2,
+    "address": "Plot 168, Market Yard, near Court Road",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "112582",
+    "phone": "+91 7186242264",
+    "lat": 18.8598,
+    "lng": 73.0546
+  },
+  {
+    "id": "CP0023",
+    "name": "Shriram Finance — Mumbai",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 7.4,
+    "address": "Plot 230, Subhash Chowk, near Collectorate",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "111996",
+    "phone": "+91 7756452346",
+    "lat": 19.2653,
+    "lng": 72.8405
+  },
+  {
+    "id": "CP0024",
+    "name": "Maharashtra SC/ST Development Corporation (Mumbai)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 2.6,
+    "address": "Plot 204, Nehru Marg, near Old Post Office",
+    "city": "Mumbai",
+    "district": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "112083",
+    "phone": "+91 8866396006",
+    "lat": 19.2774,
+    "lng": 73.0687
+  },
+  {
+    "id": "CP0031",
+    "name": "UCO Bank, Lucknow Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.8,
+    "address": "Plot 110, Cantonment Area, near Main Market",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "pincode": "113691",
+    "phone": "+91 8042826798",
+    "lat": 27.0421,
+    "lng": 80.8386
+  },
+  {
+    "id": "CP0032",
+    "name": "Bajaj Finserv — Lucknow",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 14.7,
+    "address": "Plot 237, Gandhi Nagar, near Bus Stand",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "pincode": "113173",
+    "phone": "+91 8429072287",
+    "lat": 27.0962,
+    "lng": 81.0175
+  },
+  {
+    "id": "CP0033",
+    "name": "Indian Bank, Lucknow Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.2,
+    "address": "Plot 177, Gandhi Nagar, near Industrial Area",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "pincode": "113333",
+    "phone": "+91 7726659725",
+    "lat": 26.9326,
+    "lng": 81.2303
+  },
+  {
+    "id": "CP0034",
+    "name": "Manappuram Finance — Lucknow",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.9,
+    "address": "Plot 111, Ambedkar Chowk, near Railway Station",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "pincode": "113197",
+    "phone": "+91 8390113641",
+    "lat": 26.9233,
+    "lng": 81.1436
+  },
+  {
+    "id": "CP0035",
+    "name": "Lucknow District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 6,
+    "address": "Plot 1, Subhash Chowk, near Civil Hospital",
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "pincode": "113479",
+    "phone": "+91 9554260017",
+    "lat": 26.9693,
+    "lng": 80.7223
+  },
+  {
+    "id": "CP0041",
+    "name": "Punjab National Bank, Varanasi Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.5,
+    "address": "Plot 188, MG Road, near Industrial Area",
+    "city": "Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "pincode": "114557",
+    "phone": "+91 9077550292",
+    "lat": 25.0768,
+    "lng": 83.0879
+  },
+  {
+    "id": "CP0042",
+    "name": "Uttar Pradesh SC/ST Development Corporation (Varanasi)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.5,
+    "address": "Plot 235, Subhash Chowk, near Old Post Office",
+    "city": "Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "pincode": "114253",
+    "phone": "+91 8691171937",
+    "lat": 25.5677,
+    "lng": 82.7716
+  },
+  {
+    "id": "CP0043",
+    "name": "Uttar Pradesh SC/ST Development Corporation (Varanasi)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.1,
+    "address": "Plot 71, Ambedkar Chowk, near Court Road",
+    "city": "Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "pincode": "114339",
+    "phone": "+91 8154821496",
+    "lat": 25.5059,
+    "lng": 82.7142
+  },
+  {
+    "id": "CP0044",
+    "name": "Shriram Finance — Varanasi",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 17.4,
+    "address": "Plot 51, Market Yard, near Collectorate",
+    "city": "Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "pincode": "114656",
+    "phone": "+91 7772159394",
+    "lat": 25.5552,
+    "lng": 82.893
+  },
+  {
+    "id": "CP0051",
+    "name": "Union Bank of India, Gorakhpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.4,
+    "address": "Plot 1, Cantonment Area, near Railway Station",
+    "city": "Gorakhpur",
+    "district": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "pincode": "115408",
+    "phone": "+91 7546366953",
+    "lat": 26.4623,
+    "lng": 83.4471
+  },
+  {
+    "id": "CP0052",
+    "name": "Uttar Pradesh SC/ST Development Corporation (Gorakhpur)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.3,
+    "address": "Plot 180, Station Road, near Court Road",
+    "city": "Gorakhpur",
+    "district": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "pincode": "115006",
+    "phone": "+91 7840529078",
+    "lat": 26.8187,
+    "lng": 83.5081
+  },
+  {
+    "id": "CP0053",
+    "name": "Bank of Baroda, Gorakhpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.9,
+    "address": "Plot 165, Market Yard, near Old Post Office",
+    "city": "Gorakhpur",
+    "district": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "pincode": "115529",
+    "phone": "+91 7375891826",
+    "lat": 26.9445,
+    "lng": 83.4613
+  },
+  {
+    "id": "CP0054",
+    "name": "Central Bank of India, Gorakhpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.7,
+    "address": "Plot 172, Cantonment Area, near Court Road",
+    "city": "Gorakhpur",
+    "district": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "pincode": "115263",
+    "phone": "+91 8328024569",
+    "lat": 26.9977,
+    "lng": 83.2611
+  },
+  {
+    "id": "CP0061",
+    "name": "IIFL Finance — Bhopal",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 5.8,
+    "address": "Plot 13, Cantonment Area, near Old Post Office",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116689",
+    "phone": "+91 8535750552",
+    "lat": 23.271,
+    "lng": 77.6235
+  },
+  {
+    "id": "CP0062",
+    "name": "Kotak Mahindra Bank, Bhopal",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 5.7,
+    "address": "Plot 233, Cantonment Area, near Bus Stand",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116565",
+    "phone": "+91 7130436442",
+    "lat": 22.9884,
+    "lng": 77.1773
+  },
+  {
+    "id": "CP0063",
+    "name": "State Bank of India, Bhopal Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.9,
+    "address": "Plot 249, Market Yard, near Industrial Area",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116722",
+    "phone": "+91 8986607104",
+    "lat": 23.3362,
+    "lng": 77.411
+  },
+  {
+    "id": "CP0064",
+    "name": "Canara Bank, Bhopal Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.5,
+    "address": "Plot 87, Cantonment Area, near Civil Hospital",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116053",
+    "phone": "+91 8923569907",
+    "lat": 23.3978,
+    "lng": 77.5552
+  },
+  {
+    "id": "CP0065",
+    "name": "IndusInd Bank, Bhopal",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.7,
+    "address": "Plot 19, Station Road, near Main Market",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116018",
+    "phone": "+91 9060329013",
+    "lat": 23.1259,
+    "lng": 77.6494
+  },
+  {
+    "id": "CP0066",
+    "name": "HDFC Bank, Bhopal",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 4.8,
+    "address": "Plot 91, Market Yard, near Industrial Area",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116224",
+    "phone": "+91 8173100210",
+    "lat": 23.4632,
+    "lng": 77.134
+  },
+  {
+    "id": "CP0067",
+    "name": "Shriram Finance — Bhopal",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 17.8,
+    "address": "Plot 114, Cantonment Area, near Court Road",
+    "city": "Bhopal",
+    "district": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "116756",
+    "phone": "+91 9495846281",
+    "lat": 22.981,
+    "lng": 77.5084
+  },
+  {
+    "id": "CP0071",
+    "name": "UCO Bank, Indore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.1,
+    "address": "Plot 194, MG Road, near Civil Hospital",
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "pincode": "117777",
+    "phone": "+91 9784959590",
+    "lat": 22.4817,
+    "lng": 75.6105
+  },
+  {
+    "id": "CP0072",
+    "name": "Union Bank of India, Indore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.8,
+    "address": "Plot 162, Station Road, near Main Market",
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "pincode": "117093",
+    "phone": "+91 7392190378",
+    "lat": 22.9046,
+    "lng": 76.046
+  },
+  {
+    "id": "CP0073",
+    "name": "IDFC FIRST Bank, Indore",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 5.6,
+    "address": "Plot 139, MG Road, near Court Road",
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "pincode": "117467",
+    "phone": "+91 7519196962",
+    "lat": 23.003,
+    "lng": 76.0926
+  },
+  {
+    "id": "CP0074",
+    "name": "Spandana Sphoorty — Indore",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.7,
+    "address": "Plot 183, Nehru Marg, near Railway Station",
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "pincode": "117530",
+    "phone": "+91 7712581366",
+    "lat": 22.7837,
+    "lng": 76.0374
+  },
+  {
+    "id": "CP0075",
+    "name": "Indian Bank, Indore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.6,
+    "address": "Plot 48, Market Yard, near Industrial Area",
+    "city": "Indore",
+    "district": "Indore",
+    "state": "Madhya Pradesh",
+    "pincode": "117050",
+    "phone": "+91 8230364916",
+    "lat": 22.9993,
+    "lng": 75.6159
+  },
+  {
+    "id": "CP0081",
+    "name": "Central Bank of India, Jabalpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11,
+    "address": "Plot 200, Market Yard, near Civil Hospital",
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "pincode": "117999",
+    "phone": "+91 9564099508",
+    "lat": 22.906,
+    "lng": 80.2799
+  },
+  {
+    "id": "CP0082",
+    "name": "Madhya Pradesh SC/ST Development Corporation (Jabalpur)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.8,
+    "address": "Plot 240, Ambedkar Chowk, near Bus Stand",
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "pincode": "118855",
+    "phone": "+91 7243841961",
+    "lat": 23.1061,
+    "lng": 79.7106
+  },
+  {
+    "id": "CP0083",
+    "name": "Bank of India, Jabalpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11,
+    "address": "Plot 47, Nehru Marg, near Bus Stand",
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "pincode": "118022",
+    "phone": "+91 7532982698",
+    "lat": 22.91,
+    "lng": 79.7364
+  },
+  {
+    "id": "CP0084",
+    "name": "Canara Bank, Jabalpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.8,
+    "address": "Plot 27, Market Yard, near Bus Stand",
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "pincode": "118428",
+    "phone": "+91 8957480725",
+    "lat": 22.922,
+    "lng": 80.2607
+  },
+  {
+    "id": "CP0085",
+    "name": "Mahindra Finance — Jabalpur",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 17.8,
+    "address": "Plot 231, Market Yard, near Railway Station",
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "pincode": "118408",
+    "phone": "+91 7391865811",
+    "lat": 23.4441,
+    "lng": 80.0603
+  },
+  {
+    "id": "CP0086",
+    "name": "Central Bank of India, Jabalpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.6,
+    "address": "Plot 235, MG Road, near Civil Hospital",
+    "city": "Jabalpur",
+    "district": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "pincode": "118790",
+    "phone": "+91 7527884521",
+    "lat": 23.2535,
+    "lng": 79.6992
+  },
+  {
+    "id": "CP0091",
+    "name": "Union Bank of India, Patna Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.6,
+    "address": "Plot 40, Market Yard, near Bus Stand",
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar",
+    "pincode": "119088",
+    "phone": "+91 7676464403",
+    "lat": 25.8498,
+    "lng": 85.067
+  },
+  {
+    "id": "CP0092",
+    "name": "IndusInd Bank, Patna",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.3,
+    "address": "Plot 151, Subhash Chowk, near Main Market",
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar",
+    "pincode": "119836",
+    "phone": "+91 8661375026",
+    "lat": 25.5069,
+    "lng": 84.9691
+  },
+  {
+    "id": "CP0093",
+    "name": "Axis Bank, Patna",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 3.6,
+    "address": "Plot 49, Ambedkar Chowk, near Civil Hospital",
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar",
+    "pincode": "119442",
+    "phone": "+91 7952744140",
+    "lat": 25.3101,
+    "lng": 85.0966
+  },
+  {
+    "id": "CP0094",
+    "name": "HDFC Bank, Patna",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 2.5,
+    "address": "Plot 197, Nehru Marg, near Industrial Area",
+    "city": "Patna",
+    "district": "Patna",
+    "state": "Bihar",
+    "pincode": "119518",
+    "phone": "+91 7211885201",
+    "lat": 25.6329,
+    "lng": 84.8512
+  },
+  {
+    "id": "CP0101",
+    "name": "Yes Bank, Gaya",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.5,
+    "address": "Plot 14, Subhash Chowk, near Court Road",
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar",
+    "pincode": "120187",
+    "phone": "+91 9652253505",
+    "lat": 24.9277,
+    "lng": 84.834
+  },
+  {
+    "id": "CP0102",
+    "name": "IndusInd Bank, Gaya",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.1,
+    "address": "Plot 17, MG Road, near Bus Stand",
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar",
+    "pincode": "120746",
+    "phone": "+91 9943005963",
+    "lat": 24.8913,
+    "lng": 84.7234
+  },
+  {
+    "id": "CP0103",
+    "name": "L&T Finance — Gaya",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 9.8,
+    "address": "Plot 205, Subhash Chowk, near Civil Hospital",
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar",
+    "pincode": "120376",
+    "phone": "+91 7229869487",
+    "lat": 24.6086,
+    "lng": 85.0769
+  },
+  {
+    "id": "CP0104",
+    "name": "Yes Bank, Gaya",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 5.8,
+    "address": "Plot 149, MG Road, near Railway Station",
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar",
+    "pincode": "120421",
+    "phone": "+91 8664757410",
+    "lat": 24.6699,
+    "lng": 85.0019
+  },
+  {
+    "id": "CP0105",
+    "name": "Punjab & Sind Bank, Gaya Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.8,
+    "address": "Plot 35, MG Road, near Court Road",
+    "city": "Gaya",
+    "district": "Gaya",
+    "state": "Bihar",
+    "pincode": "120667",
+    "phone": "+91 7768704542",
+    "lat": 24.5162,
+    "lng": 85.176
+  },
+  {
+    "id": "CP0111",
+    "name": "HDB Financial Services — Muzaffarpur",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 10.6,
+    "address": "Plot 49, Ambedkar Chowk, near Old Post Office",
+    "city": "Muzaffarpur",
+    "district": "Muzaffarpur",
+    "state": "Bihar",
+    "pincode": "121831",
+    "phone": "+91 7365664076",
+    "lat": 26.3022,
+    "lng": 85.6198
+  },
+  {
+    "id": "CP0112",
+    "name": "CreditAccess Grameen — Muzaffarpur",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.9,
+    "address": "Plot 168, Cantonment Area, near Industrial Area",
+    "city": "Muzaffarpur",
+    "district": "Muzaffarpur",
+    "state": "Bihar",
+    "pincode": "121617",
+    "phone": "+91 7043345334",
+    "lat": 25.8286,
+    "lng": 85.3341
+  },
+  {
+    "id": "CP0113",
+    "name": "Bank of Baroda, Muzaffarpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.6,
+    "address": "Plot 176, Station Road, near Railway Station",
+    "city": "Muzaffarpur",
+    "district": "Muzaffarpur",
+    "state": "Bihar",
+    "pincode": "121669",
+    "phone": "+91 9237956053",
+    "lat": 26.1048,
+    "lng": 85.4836
+  },
+  {
+    "id": "CP0114",
+    "name": "Bank of Maharashtra, Muzaffarpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 10.5,
+    "address": "Plot 190, Gandhi Nagar, near Bus Stand",
+    "city": "Muzaffarpur",
+    "district": "Muzaffarpur",
+    "state": "Bihar",
+    "pincode": "120989",
+    "phone": "+91 9983034814",
+    "lat": 26.2681,
+    "lng": 85.5004
+  },
+  {
+    "id": "CP0121",
+    "name": "State Bank of India, Chennai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4,
+    "address": "Plot 112, Cantonment Area, near Industrial Area",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "122792",
+    "phone": "+91 8062096745",
+    "lat": 13.1918,
+    "lng": 80.382
+  },
+  {
+    "id": "CP0122",
+    "name": "Union Bank of India, Chennai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.4,
+    "address": "Plot 134, Gandhi Nagar, near Main Market",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "122079",
+    "phone": "+91 7115013287",
+    "lat": 13.3232,
+    "lng": 80.1608
+  },
+  {
+    "id": "CP0123",
+    "name": "Canara Bank, Chennai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.1,
+    "address": "Plot 40, MG Road, near Industrial Area",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "122338",
+    "phone": "+91 8261714833",
+    "lat": 13.3306,
+    "lng": 80.289
+  },
+  {
+    "id": "CP0124",
+    "name": "Tamil Nadu SC/ST Development Corporation (Chennai)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.5,
+    "address": "Plot 181, Gandhi Nagar, near Main Market",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "122122",
+    "phone": "+91 8819818962",
+    "lat": 12.8936,
+    "lng": 80.2459
+  },
+  {
+    "id": "CP0125",
+    "name": "Axis Bank, Chennai",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.6,
+    "address": "Plot 77, Market Yard, near Old Post Office",
+    "city": "Chennai",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "122536",
+    "phone": "+91 8929012873",
+    "lat": 13.2938,
+    "lng": 80.4294
+  },
+  {
+    "id": "CP0131",
+    "name": "Satin Creditcare — Madurai",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.7,
+    "address": "Plot 3, Market Yard, near Old Post Office",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123566",
+    "phone": "+91 7710019557",
+    "lat": 9.6733,
+    "lng": 78.0243
+  },
+  {
+    "id": "CP0132",
+    "name": "Indian Bank, Madurai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.1,
+    "address": "Plot 19, Subhash Chowk, near Industrial Area",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123174",
+    "phone": "+91 8337826533",
+    "lat": 9.727,
+    "lng": 78.3001
+  },
+  {
+    "id": "CP0133",
+    "name": "IndusInd Bank, Madurai",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.4,
+    "address": "Plot 54, Gandhi Nagar, near Railway Station",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123418",
+    "phone": "+91 7556265844",
+    "lat": 10.2202,
+    "lng": 77.8316
+  },
+  {
+    "id": "CP0134",
+    "name": "Tamil Nadu SC/ST Development Corporation (Madurai)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 2.2,
+    "address": "Plot 170, MG Road, near Civil Hospital",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123622",
+    "phone": "+91 9493504499",
+    "lat": 9.7248,
+    "lng": 78.0546
+  },
+  {
+    "id": "CP0135",
+    "name": "Muthoot Finance — Madurai",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 11.5,
+    "address": "Plot 81, Subhash Chowk, near Old Post Office",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123245",
+    "phone": "+91 7162942254",
+    "lat": 10.0099,
+    "lng": 78.4116
+  },
+  {
+    "id": "CP0136",
+    "name": "Bank of India, Madurai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 9.6,
+    "address": "Plot 78, Subhash Chowk, near Court Road",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123736",
+    "phone": "+91 8772575647",
+    "lat": 9.8868,
+    "lng": 77.8519
+  },
+  {
+    "id": "CP0137",
+    "name": "Bank of Baroda, Madurai Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.3,
+    "address": "Plot 45, Subhash Chowk, near Old Post Office",
+    "city": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "123839",
+    "phone": "+91 9457638536",
+    "lat": 9.7495,
+    "lng": 78.1659
+  },
+  {
+    "id": "CP0141",
+    "name": "Indian Bank, Coimbatore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6,
+    "address": "Plot 34, Station Road, near Civil Hospital",
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "pincode": "124753",
+    "phone": "+91 9229502865",
+    "lat": 10.8394,
+    "lng": 77.0679
+  },
+  {
+    "id": "CP0142",
+    "name": "Tamil Nadu SC/ST Development Corporation (Coimbatore)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4,
+    "address": "Plot 111, MG Road, near Main Market",
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "pincode": "124751",
+    "phone": "+91 9218269613",
+    "lat": 11.2132,
+    "lng": 76.7935
+  },
+  {
+    "id": "CP0143",
+    "name": "Punjab & Sind Bank, Coimbatore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.4,
+    "address": "Plot 112, Gandhi Nagar, near Industrial Area",
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "pincode": "124291",
+    "phone": "+91 8220301619",
+    "lat": 11.0197,
+    "lng": 77.0655
+  },
+  {
+    "id": "CP0144",
+    "name": "Indian Bank, Coimbatore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.9,
+    "address": "Plot 106, Market Yard, near Main Market",
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "pincode": "124544",
+    "phone": "+91 8511428499",
+    "lat": 11.2416,
+    "lng": 76.9018
+  },
+  {
+    "id": "CP0145",
+    "name": "Union Bank of India, Coimbatore Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.3,
+    "address": "Plot 105, Ambedkar Chowk, near Industrial Area",
+    "city": "Coimbatore",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "pincode": "124084",
+    "phone": "+91 9178351429",
+    "lat": 11.2972,
+    "lng": 77.2345
+  },
+  {
+    "id": "CP0151",
+    "name": "Central Bank of India, Bengaluru Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 3.3,
+    "address": "Plot 17, MG Road, near Civil Hospital",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125080",
+    "phone": "+91 7632170901",
+    "lat": 13.0747,
+    "lng": 77.4554
+  },
+  {
+    "id": "CP0152",
+    "name": "Karnataka SC/ST Development Corporation (Bengaluru)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 2,
+    "address": "Plot 211, Cantonment Area, near Old Post Office",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125747",
+    "phone": "+91 9236331010",
+    "lat": 13.1342,
+    "lng": 77.3958
+  },
+  {
+    "id": "CP0153",
+    "name": "IIFL Finance — Bengaluru",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.7,
+    "address": "Plot 202, Subhash Chowk, near Industrial Area",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125471",
+    "phone": "+91 9874827014",
+    "lat": 12.9075,
+    "lng": 77.768
+  },
+  {
+    "id": "CP0154",
+    "name": "Bengaluru District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.6,
+    "address": "Plot 126, MG Road, near Industrial Area",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125002",
+    "phone": "+91 8981963349",
+    "lat": 13.1803,
+    "lng": 77.5421
+  },
+  {
+    "id": "CP0155",
+    "name": "Bengaluru District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 13.1,
+    "address": "Plot 207, Nehru Marg, near Civil Hospital",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125208",
+    "phone": "+91 7814373676",
+    "lat": 13.2591,
+    "lng": 77.3687
+  },
+  {
+    "id": "CP0156",
+    "name": "Karnataka SC/ST Development Corporation (Bengaluru)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.7,
+    "address": "Plot 41, Ambedkar Chowk, near Railway Station",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125491",
+    "phone": "+91 9755155075",
+    "lat": 13.1835,
+    "lng": 77.5528
+  },
+  {
+    "id": "CP0157",
+    "name": "Bengaluru District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 7.4,
+    "address": "Plot 28, Cantonment Area, near Industrial Area",
+    "city": "Bengaluru",
+    "district": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "125612",
+    "phone": "+91 8549677954",
+    "lat": 12.9242,
+    "lng": 77.7716
+  },
+  {
+    "id": "CP0161",
+    "name": "Muthoot Finance — Mysuru",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.6,
+    "address": "Plot 239, MG Road, near Railway Station",
+    "city": "Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "126490",
+    "phone": "+91 8354542056",
+    "lat": 12.3754,
+    "lng": 76.4206
+  },
+  {
+    "id": "CP0162",
+    "name": "Bank of India, Mysuru Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5,
+    "address": "Plot 29, Station Road, near Collectorate",
+    "city": "Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "126564",
+    "phone": "+91 8565642425",
+    "lat": 12.2403,
+    "lng": 76.597
+  },
+  {
+    "id": "CP0163",
+    "name": "Satin Creditcare — Mysuru",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 13.3,
+    "address": "Plot 195, Nehru Marg, near Industrial Area",
+    "city": "Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "126684",
+    "phone": "+91 9690055703",
+    "lat": 12.2423,
+    "lng": 76.7991
+  },
+  {
+    "id": "CP0164",
+    "name": "Spandana Sphoorty — Mysuru",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 14.6,
+    "address": "Plot 225, Cantonment Area, near Bus Stand",
+    "city": "Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "126827",
+    "phone": "+91 7561930189",
+    "lat": 12.2539,
+    "lng": 76.6821
+  },
+  {
+    "id": "CP0165",
+    "name": "Karnataka SC/ST Development Corporation (Mysuru)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.1,
+    "address": "Plot 222, Gandhi Nagar, near Main Market",
+    "city": "Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "126120",
+    "phone": "+91 9346611726",
+    "lat": 12.2869,
+    "lng": 76.5963
+  },
+  {
+    "id": "CP0166",
+    "name": "Karnataka SC/ST Development Corporation (Mysuru)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.2,
+    "address": "Plot 82, Gandhi Nagar, near Civil Hospital",
+    "city": "Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "125983",
+    "phone": "+91 9586907831",
+    "lat": 12.2611,
+    "lng": 76.3585
+  },
+  {
+    "id": "CP0171",
+    "name": "Satin Creditcare — Kalaburagi",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 12.8,
+    "address": "Plot 111, Nehru Marg, near Collectorate",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127544",
+    "phone": "+91 8793665240",
+    "lat": 17.0366,
+    "lng": 76.9002
+  },
+  {
+    "id": "CP0172",
+    "name": "Central Bank of India, Kalaburagi Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.2,
+    "address": "Plot 215, Ambedkar Chowk, near Railway Station",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127456",
+    "phone": "+91 9463888316",
+    "lat": 17.3082,
+    "lng": 76.8945
+  },
+  {
+    "id": "CP0173",
+    "name": "Bank of Baroda, Kalaburagi Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.2,
+    "address": "Plot 226, Cantonment Area, near Old Post Office",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127222",
+    "phone": "+91 8489597579",
+    "lat": 17.2712,
+    "lng": 76.6713
+  },
+  {
+    "id": "CP0174",
+    "name": "Central Bank of India, Kalaburagi Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.4,
+    "address": "Plot 231, MG Road, near Bus Stand",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127489",
+    "phone": "+91 8264690769",
+    "lat": 17.5338,
+    "lng": 76.9834
+  },
+  {
+    "id": "CP0175",
+    "name": "Karnataka SC/ST Development Corporation (Kalaburagi)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.8,
+    "address": "Plot 221, Station Road, near Railway Station",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127028",
+    "phone": "+91 9031716342",
+    "lat": 17.5227,
+    "lng": 76.8431
+  },
+  {
+    "id": "CP0176",
+    "name": "Bank of Maharashtra, Kalaburagi Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.4,
+    "address": "Plot 163, MG Road, near Collectorate",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127688",
+    "phone": "+91 7019770683",
+    "lat": 17.2239,
+    "lng": 76.7939
+  },
+  {
+    "id": "CP0177",
+    "name": "Bank of India, Kalaburagi Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11.6,
+    "address": "Plot 10, Nehru Marg, near Railway Station",
+    "city": "Kalaburagi",
+    "district": "Kalaburagi",
+    "state": "Karnataka",
+    "pincode": "127302",
+    "phone": "+91 9432568796",
+    "lat": 17.1243,
+    "lng": 76.883
+  },
+  {
+    "id": "CP0181",
+    "name": "Canara Bank, Jaipur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.8,
+    "address": "Plot 117, MG Road, near Court Road",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128528",
+    "phone": "+91 7925896662",
+    "lat": 26.9835,
+    "lng": 75.5535
+  },
+  {
+    "id": "CP0182",
+    "name": "IIFL Finance — Jaipur",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 13.9,
+    "address": "Plot 99, MG Road, near Industrial Area",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128101",
+    "phone": "+91 8934886216",
+    "lat": 27.0717,
+    "lng": 75.8231
+  },
+  {
+    "id": "CP0183",
+    "name": "Rajasthan SC/ST Development Corporation (Jaipur)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.4,
+    "address": "Plot 96, Nehru Marg, near Bus Stand",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128679",
+    "phone": "+91 9762510461",
+    "lat": 27.0929,
+    "lng": 75.6955
+  },
+  {
+    "id": "CP0184",
+    "name": "IDFC FIRST Bank, Jaipur",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 2.3,
+    "address": "Plot 203, Ambedkar Chowk, near Collectorate",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128663",
+    "phone": "+91 9894479982",
+    "lat": 26.8041,
+    "lng": 76.0163
+  },
+  {
+    "id": "CP0185",
+    "name": "Bank of Baroda, Jaipur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 9.6,
+    "address": "Plot 13, Nehru Marg, near Industrial Area",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128265",
+    "phone": "+91 7862440898",
+    "lat": 26.6126,
+    "lng": 76.0145
+  },
+  {
+    "id": "CP0186",
+    "name": "Spandana Sphoorty — Jaipur",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 9.5,
+    "address": "Plot 161, Cantonment Area, near Railway Station",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128193",
+    "phone": "+91 8328864779",
+    "lat": 26.9812,
+    "lng": 76.0331
+  },
+  {
+    "id": "CP0187",
+    "name": "ICICI Bank, Jaipur",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.4,
+    "address": "Plot 157, Station Road, near Bus Stand",
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "128285",
+    "phone": "+91 7515044442",
+    "lat": 26.852,
+    "lng": 75.6702
+  },
+  {
+    "id": "CP0191",
+    "name": "Indian Bank, Jodhpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.7,
+    "address": "Plot 181, Nehru Marg, near Court Road",
+    "city": "Jodhpur",
+    "district": "Jodhpur",
+    "state": "Rajasthan",
+    "pincode": "128991",
+    "phone": "+91 9655251234",
+    "lat": 26.4151,
+    "lng": 72.9518
+  },
+  {
+    "id": "CP0192",
+    "name": "HDFC Bank, Jodhpur",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 4.7,
+    "address": "Plot 250, Market Yard, near Old Post Office",
+    "city": "Jodhpur",
+    "district": "Jodhpur",
+    "state": "Rajasthan",
+    "pincode": "129464",
+    "phone": "+91 7298139991",
+    "lat": 26.1969,
+    "lng": 73.0492
+  },
+  {
+    "id": "CP0193",
+    "name": "Union Bank of India, Jodhpur Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.5,
+    "address": "Plot 86, Ambedkar Chowk, near Collectorate",
+    "city": "Jodhpur",
+    "district": "Jodhpur",
+    "state": "Rajasthan",
+    "pincode": "129705",
+    "phone": "+91 9061235170",
+    "lat": 26.0416,
+    "lng": 72.7839
+  },
+  {
+    "id": "CP0194",
+    "name": "IndusInd Bank, Jodhpur",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.9,
+    "address": "Plot 27, MG Road, near Collectorate",
+    "city": "Jodhpur",
+    "district": "Jodhpur",
+    "state": "Rajasthan",
+    "pincode": "129506",
+    "phone": "+91 8179710378",
+    "lat": 26.2682,
+    "lng": 73.2287
+  },
+  {
+    "id": "CP0195",
+    "name": "IndusInd Bank, Jodhpur",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.5,
+    "address": "Plot 161, Station Road, near Railway Station",
+    "city": "Jodhpur",
+    "district": "Jodhpur",
+    "state": "Rajasthan",
+    "pincode": "129264",
+    "phone": "+91 8154445375",
+    "lat": 26.448,
+    "lng": 73.2757
+  },
+  {
+    "id": "CP0201",
+    "name": "Indian Bank, Kota Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.2,
+    "address": "Plot 248, Ambedkar Chowk, near Industrial Area",
+    "city": "Kota",
+    "district": "Kota",
+    "state": "Rajasthan",
+    "pincode": "130513",
+    "phone": "+91 7120611926",
+    "lat": 24.958,
+    "lng": 76.1339
+  },
+  {
+    "id": "CP0202",
+    "name": "Punjab & Sind Bank, Kota Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11.4,
+    "address": "Plot 163, Ambedkar Chowk, near Court Road",
+    "city": "Kota",
+    "district": "Kota",
+    "state": "Rajasthan",
+    "pincode": "130610",
+    "phone": "+91 7671659305",
+    "lat": 25.0028,
+    "lng": 75.9903
+  },
+  {
+    "id": "CP0203",
+    "name": "Mahindra Finance — Kota",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 16.7,
+    "address": "Plot 223, Ambedkar Chowk, near Railway Station",
+    "city": "Kota",
+    "district": "Kota",
+    "state": "Rajasthan",
+    "pincode": "130024",
+    "phone": "+91 8766199359",
+    "lat": 25.3437,
+    "lng": 76.0122
+  },
+  {
+    "id": "CP0204",
+    "name": "Indian Bank, Kota Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10,
+    "address": "Plot 103, Nehru Marg, near Main Market",
+    "city": "Kota",
+    "district": "Kota",
+    "state": "Rajasthan",
+    "pincode": "130107",
+    "phone": "+91 7526328183",
+    "lat": 25.1391,
+    "lng": 76.0678
+  },
+  {
+    "id": "CP0205",
+    "name": "Satin Creditcare — Kota",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 18,
+    "address": "Plot 124, Nehru Marg, near Collectorate",
+    "city": "Kota",
+    "district": "Kota",
+    "state": "Rajasthan",
+    "pincode": "130658",
+    "phone": "+91 7594015872",
+    "lat": 25.3274,
+    "lng": 75.9617
+  },
+  {
+    "id": "CP0206",
+    "name": "Union Bank of India, Kota Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.3,
+    "address": "Plot 194, Ambedkar Chowk, near Civil Hospital",
+    "city": "Kota",
+    "district": "Kota",
+    "state": "Rajasthan",
+    "pincode": "130232",
+    "phone": "+91 7394660314",
+    "lat": 25.2709,
+    "lng": 75.6438
+  },
+  {
+    "id": "CP0211",
+    "name": "Indian Bank, Kolkata Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.7,
+    "address": "Plot 184, Nehru Marg, near Bus Stand",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "131648",
+    "phone": "+91 7529384342",
+    "lat": 22.7246,
+    "lng": 88.1839
+  },
+  {
+    "id": "CP0212",
+    "name": "Punjab & Sind Bank, Kolkata Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.2,
+    "address": "Plot 71, Station Road, near Industrial Area",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "131507",
+    "phone": "+91 7358492030",
+    "lat": 22.5449,
+    "lng": 88.5394
+  },
+  {
+    "id": "CP0213",
+    "name": "HDFC Bank, Kolkata",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.1,
+    "address": "Plot 115, Station Road, near Bus Stand",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "131199",
+    "phone": "+91 8828177849",
+    "lat": 22.2973,
+    "lng": 88.2367
+  },
+  {
+    "id": "CP0214",
+    "name": "West Bengal SC/ST Development Corporation (Kolkata)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.5,
+    "address": "Plot 229, Gandhi Nagar, near Railway Station",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "131627",
+    "phone": "+91 8214755295",
+    "lat": 22.5831,
+    "lng": 88.2004
+  },
+  {
+    "id": "CP0215",
+    "name": "Union Bank of India, Kolkata Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4,
+    "address": "Plot 6, Ambedkar Chowk, near Civil Hospital",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "131654",
+    "phone": "+91 9780043427",
+    "lat": 22.6985,
+    "lng": 88.3018
+  },
+  {
+    "id": "CP0216",
+    "name": "West Bengal SC/ST Development Corporation (Kolkata)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.1,
+    "address": "Plot 119, Market Yard, near Railway Station",
+    "city": "Kolkata",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "131576",
+    "phone": "+91 7983958923",
+    "lat": 22.6795,
+    "lng": 88.5163
+  },
+  {
+    "id": "CP0221",
+    "name": "IIFL Finance — Siliguri",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 10,
+    "address": "Plot 200, Nehru Marg, near Bus Stand",
+    "city": "Siliguri",
+    "district": "Siliguri",
+    "state": "West Bengal",
+    "pincode": "132220",
+    "phone": "+91 8551386489",
+    "lat": 26.4284,
+    "lng": 88.2682
+  },
+  {
+    "id": "CP0222",
+    "name": "Indian Bank, Siliguri Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.8,
+    "address": "Plot 118, Nehru Marg, near Main Market",
+    "city": "Siliguri",
+    "district": "Siliguri",
+    "state": "West Bengal",
+    "pincode": "131993",
+    "phone": "+91 7255462150",
+    "lat": 26.7855,
+    "lng": 88.321
+  },
+  {
+    "id": "CP0223",
+    "name": "Muthoot Finance — Siliguri",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11,
+    "address": "Plot 149, Subhash Chowk, near Court Road",
+    "city": "Siliguri",
+    "district": "Siliguri",
+    "state": "West Bengal",
+    "pincode": "132425",
+    "phone": "+91 7926190439",
+    "lat": 26.8553,
+    "lng": 88.1379
+  },
+  {
+    "id": "CP0224",
+    "name": "IndusInd Bank, Siliguri",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.9,
+    "address": "Plot 92, Market Yard, near Civil Hospital",
+    "city": "Siliguri",
+    "district": "Siliguri",
+    "state": "West Bengal",
+    "pincode": "131952",
+    "phone": "+91 8699507369",
+    "lat": 26.6448,
+    "lng": 88.4115
+  },
+  {
+    "id": "CP0231",
+    "name": "Bank of Baroda, Bardhaman Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.6,
+    "address": "Plot 31, MG Road, near Main Market",
+    "city": "Bardhaman",
+    "district": "Bardhaman",
+    "state": "West Bengal",
+    "pincode": "133143",
+    "phone": "+91 7032521511",
+    "lat": 23.0046,
+    "lng": 87.8813
+  },
+  {
+    "id": "CP0232",
+    "name": "West Bengal SC/ST Development Corporation (Bardhaman)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.4,
+    "address": "Plot 48, Nehru Marg, near Court Road",
+    "city": "Bardhaman",
+    "district": "Bardhaman",
+    "state": "West Bengal",
+    "pincode": "133540",
+    "phone": "+91 8811684230",
+    "lat": 23.3158,
+    "lng": 87.7309
+  },
+  {
+    "id": "CP0233",
+    "name": "Bardhaman District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 12.1,
+    "address": "Plot 153, Nehru Marg, near Main Market",
+    "city": "Bardhaman",
+    "district": "Bardhaman",
+    "state": "West Bengal",
+    "pincode": "132932",
+    "phone": "+91 9116667581",
+    "lat": 23.5298,
+    "lng": 87.8684
+  },
+  {
+    "id": "CP0234",
+    "name": "HDFC Bank, Bardhaman",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.9,
+    "address": "Plot 78, Subhash Chowk, near Court Road",
+    "city": "Bardhaman",
+    "district": "Bardhaman",
+    "state": "West Bengal",
+    "pincode": "133687",
+    "phone": "+91 7259797177",
+    "lat": 23.2171,
+    "lng": 87.6141
+  },
+  {
+    "id": "CP0235",
+    "name": "Canara Bank, Bardhaman Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.5,
+    "address": "Plot 8, Station Road, near Old Post Office",
+    "city": "Bardhaman",
+    "district": "Bardhaman",
+    "state": "West Bengal",
+    "pincode": "133309",
+    "phone": "+91 7428279173",
+    "lat": 23.476,
+    "lng": 88.1328
+  },
+  {
+    "id": "CP0236",
+    "name": "West Bengal SC/ST Development Corporation (Bardhaman)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 2.6,
+    "address": "Plot 237, Nehru Marg, near Collectorate",
+    "city": "Bardhaman",
+    "district": "Bardhaman",
+    "state": "West Bengal",
+    "pincode": "133381",
+    "phone": "+91 9025735891",
+    "lat": 23.1936,
+    "lng": 87.7778
+  },
+  {
+    "id": "CP0241",
+    "name": "Canara Bank, Ludhiana Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.1,
+    "address": "Plot 159, MG Road, near Collectorate",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134135",
+    "phone": "+91 8954031207",
+    "lat": 30.6899,
+    "lng": 76.0507
+  },
+  {
+    "id": "CP0242",
+    "name": "Punjab National Bank, Ludhiana Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8,
+    "address": "Plot 27, Subhash Chowk, near Bus Stand",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134281",
+    "phone": "+91 7756109183",
+    "lat": 30.7905,
+    "lng": 75.9356
+  },
+  {
+    "id": "CP0243",
+    "name": "Punjab SC/ST Development Corporation (Ludhiana)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.4,
+    "address": "Plot 244, Nehru Marg, near Court Road",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134461",
+    "phone": "+91 7439094248",
+    "lat": 31.1074,
+    "lng": 75.8216
+  },
+  {
+    "id": "CP0244",
+    "name": "Shriram Finance — Ludhiana",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 7.6,
+    "address": "Plot 195, Cantonment Area, near Main Market",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134570",
+    "phone": "+91 8850882133",
+    "lat": 31.11,
+    "lng": 75.8929
+  },
+  {
+    "id": "CP0245",
+    "name": "Indian Bank, Ludhiana Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.5,
+    "address": "Plot 199, MG Road, near Main Market",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134333",
+    "phone": "+91 7291117095",
+    "lat": 31.0298,
+    "lng": 75.9129
+  },
+  {
+    "id": "CP0246",
+    "name": "Punjab National Bank, Ludhiana Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.7,
+    "address": "Plot 150, Gandhi Nagar, near Industrial Area",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134148",
+    "phone": "+91 9677019679",
+    "lat": 31.1641,
+    "lng": 75.5906
+  },
+  {
+    "id": "CP0247",
+    "name": "Punjab SC/ST Development Corporation (Ludhiana)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.5,
+    "address": "Plot 81, Subhash Chowk, near Civil Hospital",
+    "city": "Ludhiana",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "pincode": "134250",
+    "phone": "+91 9326149068",
+    "lat": 30.9806,
+    "lng": 76.052
+  },
+  {
+    "id": "CP0251",
+    "name": "Central Bank of India, Amritsar Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.7,
+    "address": "Plot 129, Station Road, near Main Market",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "135619",
+    "phone": "+91 9048632984",
+    "lat": 31.6322,
+    "lng": 74.7846
+  },
+  {
+    "id": "CP0252",
+    "name": "Amritsar District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 12.4,
+    "address": "Plot 93, Station Road, near Railway Station",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "135393",
+    "phone": "+91 7591343368",
+    "lat": 31.6818,
+    "lng": 74.7079
+  },
+  {
+    "id": "CP0253",
+    "name": "Bank of Maharashtra, Amritsar Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 8.1,
+    "address": "Plot 239, Market Yard, near Old Post Office",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "135222",
+    "phone": "+91 7863952095",
+    "lat": 31.4589,
+    "lng": 74.726
+  },
+  {
+    "id": "CP0254",
+    "name": "ICICI Bank, Amritsar",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6,
+    "address": "Plot 163, Station Road, near Collectorate",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "135149",
+    "phone": "+91 8197933973",
+    "lat": 31.9316,
+    "lng": 74.7635
+  },
+  {
+    "id": "CP0255",
+    "name": "Canara Bank, Amritsar Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.2,
+    "address": "Plot 105, Ambedkar Chowk, near Court Road",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "135416",
+    "phone": "+91 8812813099",
+    "lat": 31.7574,
+    "lng": 75.0178
+  },
+  {
+    "id": "CP0256",
+    "name": "Punjab SC/ST Development Corporation (Amritsar)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.6,
+    "address": "Plot 189, Station Road, near Bus Stand",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "135426",
+    "phone": "+91 7096457243",
+    "lat": 31.7256,
+    "lng": 75.0105
+  },
+  {
+    "id": "CP0257",
+    "name": "Punjab SC/ST Development Corporation (Amritsar)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3,
+    "address": "Plot 90, Gandhi Nagar, near Main Market",
+    "city": "Amritsar",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "pincode": "134942",
+    "phone": "+91 7995139049",
+    "lat": 31.6858,
+    "lng": 74.9328
+  },
+  {
+    "id": "CP0261",
+    "name": "IndusInd Bank, Patiala",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 2.6,
+    "address": "Plot 189, Market Yard, near Collectorate",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "136430",
+    "phone": "+91 8222713273",
+    "lat": 30.5529,
+    "lng": 76.3443
+  },
+  {
+    "id": "CP0262",
+    "name": "Punjab SC/ST Development Corporation (Patiala)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.5,
+    "address": "Plot 235, Nehru Marg, near Railway Station",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "136425",
+    "phone": "+91 7861466982",
+    "lat": 30.5384,
+    "lng": 76.178
+  },
+  {
+    "id": "CP0263",
+    "name": "Central Bank of India, Patiala Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 10.1,
+    "address": "Plot 244, Gandhi Nagar, near Collectorate",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "136336",
+    "phone": "+91 7544508513",
+    "lat": 30.291,
+    "lng": 76.4005
+  },
+  {
+    "id": "CP0264",
+    "name": "Bank of Maharashtra, Patiala Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.6,
+    "address": "Plot 22, Ambedkar Chowk, near Industrial Area",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "135932",
+    "phone": "+91 7949405082",
+    "lat": 30.0444,
+    "lng": 76.4181
+  },
+  {
+    "id": "CP0265",
+    "name": "Satin Creditcare — Patiala",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 4.7,
+    "address": "Plot 156, Cantonment Area, near Industrial Area",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "136432",
+    "phone": "+91 9597142393",
+    "lat": 30.1556,
+    "lng": 76.3029
+  },
+  {
+    "id": "CP0266",
+    "name": "Kotak Mahindra Bank, Patiala",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 5,
+    "address": "Plot 219, MG Road, near Old Post Office",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "136376",
+    "phone": "+91 7491432299",
+    "lat": 30.1633,
+    "lng": 76.3153
+  },
+  {
+    "id": "CP0267",
+    "name": "UCO Bank, Patiala Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.9,
+    "address": "Plot 93, Subhash Chowk, near Civil Hospital",
+    "city": "Patiala",
+    "district": "Patiala",
+    "state": "Punjab",
+    "pincode": "136330",
+    "phone": "+91 7670442555",
+    "lat": 30.5804,
+    "lng": 76.2961
+  },
+  {
+    "id": "CP0271",
+    "name": "UCO Bank, Vijayawada Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 9.2,
+    "address": "Plot 8, Nehru Marg, near Collectorate",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137319",
+    "phone": "+91 9365578317",
+    "lat": 16.5931,
+    "lng": 80.8486
+  },
+  {
+    "id": "CP0272",
+    "name": "IndusInd Bank, Vijayawada",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.9,
+    "address": "Plot 69, Ambedkar Chowk, near Bus Stand",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137786",
+    "phone": "+91 8991981073",
+    "lat": 16.3646,
+    "lng": 80.5644
+  },
+  {
+    "id": "CP0273",
+    "name": "Bajaj Finserv — Vijayawada",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 13.7,
+    "address": "Plot 65, Nehru Marg, near Main Market",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137764",
+    "phone": "+91 9886290875",
+    "lat": 16.7056,
+    "lng": 80.7675
+  },
+  {
+    "id": "CP0274",
+    "name": "Mahindra Finance — Vijayawada",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 13.9,
+    "address": "Plot 13, Station Road, near Bus Stand",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137233",
+    "phone": "+91 9417735164",
+    "lat": 16.4122,
+    "lng": 80.6116
+  },
+  {
+    "id": "CP0275",
+    "name": "Arohan Financial Services — Vijayawada",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 11.8,
+    "address": "Plot 64, MG Road, near Railway Station",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137819",
+    "phone": "+91 7848302345",
+    "lat": 16.6721,
+    "lng": 80.6811
+  },
+  {
+    "id": "CP0276",
+    "name": "Arohan Financial Services — Vijayawada",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 16.4,
+    "address": "Plot 83, Gandhi Nagar, near Bus Stand",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137138",
+    "phone": "+91 8864874767",
+    "lat": 16.2313,
+    "lng": 80.6381
+  },
+  {
+    "id": "CP0277",
+    "name": "Mahindra Finance — Vijayawada",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.9,
+    "address": "Plot 88, Nehru Marg, near Bus Stand",
+    "city": "Vijayawada",
+    "district": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "137269",
+    "phone": "+91 9912001907",
+    "lat": 16.7438,
+    "lng": 80.5237
+  },
+  {
+    "id": "CP0281",
+    "name": "ICICI Bank, Visakhapatnam",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 2.5,
+    "address": "Plot 195, Ambedkar Chowk, near Civil Hospital",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "pincode": "138428",
+    "phone": "+91 7384243982",
+    "lat": 17.983,
+    "lng": 83.1893
+  },
+  {
+    "id": "CP0282",
+    "name": "Visakhapatnam District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 12.9,
+    "address": "Plot 157, Subhash Chowk, near Court Road",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "pincode": "138310",
+    "phone": "+91 8081419478",
+    "lat": 17.8893,
+    "lng": 83.2092
+  },
+  {
+    "id": "CP0283",
+    "name": "Axis Bank, Visakhapatnam",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.1,
+    "address": "Plot 173, Gandhi Nagar, near Court Road",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "pincode": "138364",
+    "phone": "+91 7295999797",
+    "lat": 17.579,
+    "lng": 83.4056
+  },
+  {
+    "id": "CP0284",
+    "name": "Punjab & Sind Bank, Visakhapatnam Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.1,
+    "address": "Plot 59, Station Road, near Civil Hospital",
+    "city": "Visakhapatnam",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "pincode": "138645",
+    "phone": "+91 7733478119",
+    "lat": 17.834,
+    "lng": 82.9592
+  },
+  {
+    "id": "CP0291",
+    "name": "Tirupati District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.9,
+    "address": "Plot 140, Ambedkar Chowk, near Industrial Area",
+    "city": "Tirupati",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "pincode": "139407",
+    "phone": "+91 9842965417",
+    "lat": 13.593,
+    "lng": 79.6318
+  },
+  {
+    "id": "CP0292",
+    "name": "L&T Finance — Tirupati",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 14.7,
+    "address": "Plot 227, Nehru Marg, near Civil Hospital",
+    "city": "Tirupati",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "pincode": "139618",
+    "phone": "+91 8754943705",
+    "lat": 13.7617,
+    "lng": 79.5603
+  },
+  {
+    "id": "CP0293",
+    "name": "L&T Finance — Tirupati",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance"
+    ],
+    "npaPercent": 16.2,
+    "address": "Plot 12, Gandhi Nagar, near Old Post Office",
+    "city": "Tirupati",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "pincode": "139287",
+    "phone": "+91 9240480272",
+    "lat": 13.7143,
+    "lng": 79.1556
+  },
+  {
+    "id": "CP0294",
+    "name": "Punjab & Sind Bank, Tirupati Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 3.3,
+    "address": "Plot 250, Market Yard, near Old Post Office",
+    "city": "Tirupati",
+    "district": "Tirupati",
+    "state": "Andhra Pradesh",
+    "pincode": "139647",
+    "phone": "+91 9123320108",
+    "lat": 13.5728,
+    "lng": 79.1865
+  },
+  {
+    "id": "CP0301",
+    "name": "Axis Bank, Ahmedabad",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.3,
+    "address": "Plot 78, Nehru Marg, near Bus Stand",
+    "city": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "140585",
+    "phone": "+91 9437225679",
+    "lat": 22.9238,
+    "lng": 72.6447
+  },
+  {
+    "id": "CP0302",
+    "name": "Kotak Mahindra Bank, Ahmedabad",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 6.1,
+    "address": "Plot 103, Gandhi Nagar, near Court Road",
+    "city": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "140353",
+    "phone": "+91 9157432430",
+    "lat": 23.2532,
+    "lng": 72.6278
+  },
+  {
+    "id": "CP0303",
+    "name": "Gujarat SC/ST Development Corporation (Ahmedabad)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.3,
+    "address": "Plot 78, Nehru Marg, near Court Road",
+    "city": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "140041",
+    "phone": "+91 8780670341",
+    "lat": 23.0543,
+    "lng": 72.3433
+  },
+  {
+    "id": "CP0304",
+    "name": "Bank of Maharashtra, Ahmedabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.4,
+    "address": "Plot 101, Station Road, near Railway Station",
+    "city": "Ahmedabad",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "140045",
+    "phone": "+91 9366859431",
+    "lat": 23.0005,
+    "lng": 72.6874
+  },
+  {
+    "id": "CP0311",
+    "name": "Indian Bank, Surat Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3,
+    "address": "Plot 100, Cantonment Area, near Civil Hospital",
+    "city": "Surat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "pincode": "140909",
+    "phone": "+91 9236601863",
+    "lat": 21.1698,
+    "lng": 72.9411
+  },
+  {
+    "id": "CP0312",
+    "name": "State Bank of India, Surat Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 7.5,
+    "address": "Plot 233, Nehru Marg, near Bus Stand",
+    "city": "Surat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "pincode": "141057",
+    "phone": "+91 8371162394",
+    "lat": 20.8781,
+    "lng": 72.6738
+  },
+  {
+    "id": "CP0313",
+    "name": "Satin Creditcare — Surat",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 12.6,
+    "address": "Plot 30, MG Road, near Main Market",
+    "city": "Surat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "pincode": "141183",
+    "phone": "+91 7399063206",
+    "lat": 21.4443,
+    "lng": 72.5902
+  },
+  {
+    "id": "CP0314",
+    "name": "L&T Finance — Surat",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.6,
+    "address": "Plot 170, Station Road, near Court Road",
+    "city": "Surat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "pincode": "141311",
+    "phone": "+91 8892112330",
+    "lat": 21.0424,
+    "lng": 72.9566
+  },
+  {
+    "id": "CP0315",
+    "name": "Mahindra Finance — Surat",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 13.2,
+    "address": "Plot 191, MG Road, near Main Market",
+    "city": "Surat",
+    "district": "Surat",
+    "state": "Gujarat",
+    "pincode": "141470",
+    "phone": "+91 7762416840",
+    "lat": 20.9167,
+    "lng": 72.7567
+  },
+  {
+    "id": "CP0321",
+    "name": "HDB Financial Services — Rajkot",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.9,
+    "address": "Plot 103, Cantonment Area, near Old Post Office",
+    "city": "Rajkot",
+    "district": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "142706",
+    "phone": "+91 8589676423",
+    "lat": 22.3329,
+    "lng": 70.8403
+  },
+  {
+    "id": "CP0322",
+    "name": "Yes Bank, Rajkot",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.6,
+    "address": "Plot 90, MG Road, near Railway Station",
+    "city": "Rajkot",
+    "district": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "141913",
+    "phone": "+91 9536247041",
+    "lat": 22.5286,
+    "lng": 70.6782
+  },
+  {
+    "id": "CP0323",
+    "name": "Central Bank of India, Rajkot Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.9,
+    "address": "Plot 123, Ambedkar Chowk, near Court Road",
+    "city": "Rajkot",
+    "district": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "142616",
+    "phone": "+91 9378010033",
+    "lat": 22.0694,
+    "lng": 70.6565
+  },
+  {
+    "id": "CP0324",
+    "name": "Bank of Baroda, Rajkot Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 6.8,
+    "address": "Plot 250, Cantonment Area, near Court Road",
+    "city": "Rajkot",
+    "district": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "142291",
+    "phone": "+91 8629485909",
+    "lat": 22.4913,
+    "lng": 70.5034
+  },
+  {
+    "id": "CP0325",
+    "name": "UCO Bank, Rajkot Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.7,
+    "address": "Plot 87, Station Road, near Collectorate",
+    "city": "Rajkot",
+    "district": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "142396",
+    "phone": "+91 9089966436",
+    "lat": 22.0065,
+    "lng": 70.8209
+  },
+  {
+    "id": "CP0326",
+    "name": "Punjab & Sind Bank, Rajkot Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 11.4,
+    "address": "Plot 242, Ambedkar Chowk, near Civil Hospital",
+    "city": "Rajkot",
+    "district": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "142292",
+    "phone": "+91 8021480323",
+    "lat": 22.5904,
+    "lng": 70.6896
+  },
+  {
+    "id": "CP0331",
+    "name": "ICICI Bank, Hyderabad",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 2.2,
+    "address": "Plot 228, Market Yard, near Civil Hospital",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "143542",
+    "phone": "+91 8732535904",
+    "lat": 17.1375,
+    "lng": 78.2377
+  },
+  {
+    "id": "CP0332",
+    "name": "Kotak Mahindra Bank, Hyderabad",
+    "type": "private-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 2.4,
+    "address": "Plot 230, Station Road, near Old Post Office",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "143139",
+    "phone": "+91 8431764963",
+    "lat": 17.6085,
+    "lng": 78.3131
+  },
+  {
+    "id": "CP0333",
+    "name": "Punjab National Bank, Hyderabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.4,
+    "address": "Plot 239, Ambedkar Chowk, near Court Road",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "143388",
+    "phone": "+91 8181671611",
+    "lat": 17.126,
+    "lng": 78.4693
+  },
+  {
+    "id": "CP0334",
+    "name": "IIFL Finance — Hyderabad",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.2,
+    "address": "Plot 72, Market Yard, near Collectorate",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "143156",
+    "phone": "+91 8284567746",
+    "lat": 17.5016,
+    "lng": 78.6227
+  },
+  {
+    "id": "CP0335",
+    "name": "Telangana SC/ST Development Corporation (Hyderabad)",
+    "type": "regional-agency",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5.1,
+    "address": "Plot 177, Market Yard, near Main Market",
+    "city": "Hyderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "142953",
+    "phone": "+91 9238098018",
+    "lat": 17.4218,
+    "lng": 78.622
+  },
+  {
+    "id": "CP0341",
+    "name": "Canara Bank, Warangal Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.4,
+    "address": "Plot 234, Subhash Chowk, near Industrial Area",
+    "city": "Warangal",
+    "district": "Warangal",
+    "state": "Telangana",
+    "pincode": "144553",
+    "phone": "+91 7924796461",
+    "lat": 17.9181,
+    "lng": 79.8058
+  },
+  {
+    "id": "CP0342",
+    "name": "Canara Bank, Warangal Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 3.5,
+    "address": "Plot 145, Market Yard, near Court Road",
+    "city": "Warangal",
+    "district": "Warangal",
+    "state": "Telangana",
+    "pincode": "144530",
+    "phone": "+91 8454251838",
+    "lat": 18.1815,
+    "lng": 79.455
+  },
+  {
+    "id": "CP0343",
+    "name": "Warangal District Co-operative Bank",
+    "type": "cooperative",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 14.5,
+    "address": "Plot 144, Ambedkar Chowk, near Civil Hospital",
+    "city": "Warangal",
+    "district": "Warangal",
+    "state": "Telangana",
+    "pincode": "144145",
+    "phone": "+91 9168707787",
+    "lat": 17.6693,
+    "lng": 79.8366
+  },
+  {
+    "id": "CP0344",
+    "name": "IIFL Finance — Warangal",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 11.7,
+    "address": "Plot 228, Ambedkar Chowk, near Railway Station",
+    "city": "Warangal",
+    "district": "Warangal",
+    "state": "Telangana",
+    "pincode": "144488",
+    "phone": "+91 9274352135",
+    "lat": 18.0416,
+    "lng": 79.6297
+  },
+  {
+    "id": "CP0351",
+    "name": "Central Bank of India, Nizamabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.4,
+    "address": "Plot 184, Gandhi Nagar, near Railway Station",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "145475",
+    "phone": "+91 9236261776",
+    "lat": 18.4632,
+    "lng": 78.1779
+  },
+  {
+    "id": "CP0352",
+    "name": "Bank of Baroda, Nizamabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 3.9,
+    "address": "Plot 142, Subhash Chowk, near Main Market",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "145141",
+    "phone": "+91 8038685012",
+    "lat": 18.6856,
+    "lng": 77.8604
+  },
+  {
+    "id": "CP0353",
+    "name": "Bank of Maharashtra, Nizamabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 4.9,
+    "address": "Plot 160, Nehru Marg, near Bus Stand",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "144907",
+    "phone": "+91 8273417251",
+    "lat": 18.5358,
+    "lng": 78.2876
+  },
+  {
+    "id": "CP0354",
+    "name": "Arohan Financial Services — Nizamabad",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 8.2,
+    "address": "Plot 187, Station Road, near Collectorate",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "145326",
+    "phone": "+91 8370734276",
+    "lat": 18.712,
+    "lng": 78.2582
+  },
+  {
+    "id": "CP0355",
+    "name": "Muthoot Finance — Nizamabad",
+    "type": "nbfc",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 14.4,
+    "address": "Plot 141, Station Road, near Industrial Area",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "145748",
+    "phone": "+91 9711613180",
+    "lat": 18.5646,
+    "lng": 77.8234
+  },
+  {
+    "id": "CP0356",
+    "name": "Punjab National Bank, Nizamabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan",
+      "education-loan"
+    ],
+    "npaPercent": 5,
+    "address": "Plot 206, Subhash Chowk, near Industrial Area",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "145555",
+    "phone": "+91 8948332782",
+    "lat": 18.4694,
+    "lng": 78.1793
+  },
+  {
+    "id": "CP0357",
+    "name": "Bank of Baroda, Nizamabad Main Branch",
+    "type": "public-sector-bank",
+    "schemes": [
+      "micro-finance",
+      "term-loan"
+    ],
+    "npaPercent": 5.9,
+    "address": "Plot 238, Cantonment Area, near Court Road",
+    "city": "Nizamabad",
+    "district": "Nizamabad",
+    "state": "Telangana",
+    "pincode": "145277",
+    "phone": "+91 9430129316",
+    "lat": 18.3827,
+    "lng": 78.1115
+  }
+]
