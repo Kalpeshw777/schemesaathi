@@ -48,7 +48,7 @@ export default function Header() {
             ₹
           </span>
           <span className="text-base font-black tracking-tight text-white sm:text-lg">
-            Loan<span className="text-[#F97316]">Saathi</span>
+            Scheme<span className="text-[#F97316]">Saathi</span>
           </span>
         </Link>
 

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Expert AI Advisory Engine for Government Concessional Loan Schemes
  * Ministry of Social Justice and Empowerment, NSFDC, Stand-Up India, PMMY, VCF-SC
  *
@@ -315,7 +315,7 @@ NSFDC does **not** disburse cash directly to citizens. All loans are sanctioned 
   const cost = projectAmount ?? profile?.projectCost ?? 300000;
   const loan90 = Math.round(cost * 0.9);
 
-  return `### 💡 LoanSaathi Financial Advisory
+  return `### 💡 SchemeSaathi Financial Advisory
 
 Regarding your query: *"**${lastUserMsg}**"*
 

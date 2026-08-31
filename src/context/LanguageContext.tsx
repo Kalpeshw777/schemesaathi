@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -36,7 +36,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     hero_badge: "✨ Government SC Loan Schemes · Made Simple",
     hero_title_1: "The money is waiting.",
     hero_title_2: "We show you the way to it.",
-    hero_desc: "Crores in earmarked government funding for SC entrepreneurs and students goes underutilized every year — simply because people don't know which scheme fits them, what their EMI looks like, or which Channel Partner to walk into. LoanSaathi fixes all three.",
+    hero_desc: "Crores in earmarked government funding for SC entrepreneurs and students goes underutilized every year — simply because people don't know which scheme fits them, what their EMI looks like, or which Channel Partner to walk into. SchemeSaathi fixes all three.",
     hero_cta_find: "Find My Scheme →",
     hero_cta_locate: "Locate Partners Near Me",
 
@@ -170,7 +170,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     hero_badge: "✨ अनुसूचित जाति (SC) सरकारी ऋण योजनाएं · आसान और सरल",
     hero_title_1: "सरकारी धन उपलब्ध है।",
     hero_title_2: "हम आपको सही रास्ता दिखाते हैं।",
-    hero_desc: "अनुसूचित जाति (SC) के उद्यमियों और छात्रों के लिए करोड़ों रुपये का सरकारी फंड हर साल बिना उपयोग के रह जाता है — क्योंकि लोगों को सही योजना, ईएमआई और बैंक शाखा की जानकारी नहीं होती। LoanSaathi इन तीनों का समाधान करता है।",
+    hero_desc: "अनुसूचित जाति (SC) के उद्यमियों और छात्रों के लिए करोड़ों रुपये का सरकारी फंड हर साल बिना उपयोग के रह जाता है — क्योंकि लोगों को सही योजना, ईएमआई और बैंक शाखा की जानकारी नहीं होती। SchemeSaathi इन तीनों का समाधान करता है।",
     hero_cta_find: "मेरी योजना खोजें →",
     hero_cta_locate: "नजदीकी बैंक खोजें",
 
@@ -304,7 +304,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     hero_badge: "✨ अनुसूचित जाती (SC) शासकीय कर्ज योजना · सोप्या भाषेत",
     hero_title_1: "शासनाचा निधी उपलब्ध आहे.",
     hero_title_2: "आम्ही दाखवतो योग्य मार्ग.",
-    hero_desc: "अनुसूचित जातीच्या (SC) उद्योजकांसाठी आणि विद्यार्थ्यांसाठी कोट्यवधी रुपयांचा शासकीय निधी दरवर्षी पडून राहतो — कारण लोकांना योग्य योजना, EMI आणि अधिकृत बँकेची माहिती नसते. LoanSaathi या तिन्हींची अचूक माहिती देते.",
+    hero_desc: "अनुसूचित जातीच्या (SC) उद्योजकांसाठी आणि विद्यार्थ्यांसाठी कोट्यवधी रुपयांचा शासकीय निधी दरवर्षी पडून राहतो — कारण लोकांना योग्य योजना, EMI आणि अधिकृत बँकेची माहिती नसते. SchemeSaathi या तिन्हींची अचूक माहिती देते.",
     hero_cta_find: "माझी योजना शोधा →",
     hero_cta_locate: "जवळची बँक शाखा शोधा",
 
@@ -435,7 +435,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     hero_badge: "✨ અનુસૂચિત જાતિ (SC) સરકારી લોન યોજનાઓ",
     hero_title_1: "સરકારી ભંડોળ ઉપલબ્ધ છે.",
     hero_title_2: "અમે તમને સાચો રસ્તો બતાવીએ છીએ.",
-    hero_desc: "SC ઉદ્યોગસાહસિકો અને વિદ્યાર્થીઓ માટે કરોડો રૂપિયાનું સરકારી ફંડ ઉપલબ્ધ છે. LoanSaathi તમને યોગ્ય યોજના અને બેંક શોધવામાં મદદ કરે છે.",
+    hero_desc: "SC ઉદ્યોગસાહસિકો અને વિદ્યાર્થીઓ માટે કરોડો રૂપિયાનું સરકારી ફંડ ઉપલબ્ધ છે. SchemeSaathi તમને યોગ્ય યોજના અને બેંક શોધવામાં મદદ કરે છે.",
     hero_cta_find: "મારી યોજના શોધો →",
     hero_cta_locate: "નજીકની બેંક શોધો",
     stat_1_val: "₹50 લાખ",

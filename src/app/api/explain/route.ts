@@ -1,4 +1,4 @@
-import { groqChat } from "@/lib/groq";
+﻿import { groqChat } from "@/lib/groq";
 import { SCHEMES } from "@/lib/schemes";
 import type { Profile, Recommendation } from "@/lib/types";
 
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     process.env.GROQ_API_KEY = clientKey;
   }
 
-  const systemPrompt = `You are LoanSaathi, a helpful assistant explaining Indian government loan schemes for Scheduled Caste (SC) entrepreneurs and students (NSFDC-style schemes). Explain in simple English suitable for a first-generation applicant. Be encouraging but factual — never invent figures beyond what is provided.
+  const systemPrompt = `You are SchemeSaathi, a helpful assistant explaining Indian government loan schemes for Scheduled Caste (SC) entrepreneurs and students (NSFDC-style schemes). Explain in simple English suitable for a first-generation applicant. Be encouraging but factual — never invent figures beyond what is provided.
 
 Scheme facts:
 ${Object.values(SCHEMES)

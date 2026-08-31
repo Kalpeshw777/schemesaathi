@@ -7,7 +7,7 @@ import { JourneyProvider } from "@/context/JourneyContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "LoanSaathi — Find, Calculate & Apply for SC Loan Schemes",
+  title: "SchemeSaathi — Find, Calculate & Apply for SC Loan Schemes",
   description:
     "Government scheme recommendation, EMI calculator and Channel Partner locator for NSFDC-style concessional loan schemes for Scheduled Caste citizens in English, Hindi, Marathi & regional Indian languages.",
 };

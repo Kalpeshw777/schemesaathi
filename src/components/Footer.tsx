@@ -16,7 +16,7 @@ export default function Footer() {
 
         {/* Title */}
         <p className="text-sm sm:text-base font-black text-white" style={{ color: "#FFFFFF" }}>
-          Loan<span className="text-[#F97316]">Saathi</span> — Ministry of Social Justice & Empowerment
+          Scheme<span className="text-[#F97316]">Saathi</span> — Ministry of Social Justice & Empowerment
         </p>
 
         {/* Detailed High-Contrast Disclaimer */}
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-3 text-[11px] text-[#FED7AA] font-bold" style={{ color: "#FED7AA" }}>
-          © 2026 LoanSaathi · Built with Pride for SC Entrepreneurship & Higher Education
+          © 2026 SchemeSaathi · Built with Pride for SC Entrepreneurship & Higher Education
         </p>
       </div>
     </footer>

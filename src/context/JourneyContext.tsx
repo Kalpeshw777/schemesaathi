@@ -8,7 +8,7 @@ export interface JourneyState {
   recommendation?: Recommendation;
 }
 
-const STORAGE_KEY = "loansaathi-journey";
+const STORAGE_KEY = "schemesaathi-journey";
 const EMPTY: JourneyState = {};
 
 let state: JourneyState | null = null;
