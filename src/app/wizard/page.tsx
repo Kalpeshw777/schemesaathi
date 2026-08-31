@@ -155,7 +155,7 @@ function AnimatedSelect({
   };
 
   return (
-    <div ref={dropdownRef} className={`relative ${open ? "z-[9999]" : "z-10"}`}>
+    <div ref={dropdownRef} className={`relative ${open ? "z-[99999]" : "z-20"}`}>
       <span className="mb-1.5 block text-xs sm:text-sm font-bold text-white" style={{ color: "#FFFFFF" }}>
         {label}
       </span>
@@ -187,7 +187,7 @@ function AnimatedSelect({
 
       {open && !disabled && (
         <div
-          className="absolute left-0 right-0 top-full mt-2 z-[9999] rounded-2xl liquid-glass p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.85)] ring-1 ring-white/20 animate-in fade-in zoom-in-95 duration-150"
+          className="absolute left-0 right-0 top-full mt-2 z-[99999] rounded-2xl bg-[#0B0F19]/95 backdrop-blur-2xl p-2.5 shadow-[0_25px_60px_rgba(0,0,0,0.95)] border border-[#F97316]/50 ring-1 ring-white/20 animate-in fade-in zoom-in-95 duration-150"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Quick Letter Search Bar */}

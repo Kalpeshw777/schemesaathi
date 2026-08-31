@@ -139,7 +139,7 @@ function LocatorDropdown({
   };
 
   return (
-    <div ref={ref} className={`relative ${open ? "z-[99999]" : "z-10"}`}>
+    <div ref={ref} className={`relative ${open ? "z-[99999]" : "z-20"}`}>
       <button
         type="button"
         onClick={(e) => {
@@ -158,7 +158,7 @@ function LocatorDropdown({
 
       {open && (
         <div
-          className="absolute left-0 top-full mt-2 z-[99999] min-w-[210px] rounded-2xl liquid-glass p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.85)] ring-1 ring-white/20 animate-in fade-in zoom-in-95 duration-150"
+          className="absolute left-0 top-full mt-2 z-[99999] min-w-[220px] rounded-2xl bg-[#0B0F19]/95 backdrop-blur-2xl p-2.5 shadow-[0_25px_60px_rgba(0,0,0,0.95)] border border-[#F97316]/50 ring-1 ring-white/20 animate-in fade-in zoom-in-95 duration-150"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Search Bar inside dropdown */}
@@ -387,7 +387,7 @@ export default function LocatorPage() {
         </div>
 
         {/* Toolbar Filters with Liquid Glass */}
-        <div className="rounded-3xl liquid-glass p-4 sm:p-5 shadow-2xl mb-6 flex flex-wrap items-center justify-between gap-3">
+        <div className="relative z-40 rounded-3xl liquid-glass p-4 sm:p-5 shadow-2xl mb-6 flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2.5">
             {/* Scheme Filter */}
             <LocatorDropdown
