@@ -376,7 +376,25 @@ export default function ChatAssistant() {
                   {m.role === "user" ? (
                     <p className="whitespace-pre-wrap">{m.content}</p>
                   ) : (
-                    <div>{formatMarkdown(m.content)}</div>
+                    <div>
+                      {formatMarkdown(m.content)}
+                      <div className="mt-2 pt-1.5 border-t border-white/10 flex items-center justify-between text-[10px] font-semibold text-slate-300">
+                        <span style={{ color: m.source === "groq" ? "#FED7AA" : "#94A3B8" }}>
+                          {m.source === "groq"
+                            ? "✨ Groq Llama 3.3 70B"
+                            : "🏛️ SchemeSaathi Expert AI"}
+                        </span>
+                        {m.source === "groq" ? (
+                          <span className="rounded bg-emerald-500/20 px-1.5 py-0.2 text-[9px] font-black text-emerald-400 border border-emerald-500/30">
+                            LIVE CLOUD AI
+                          </span>
+                        ) : (
+                          <span className="rounded bg-white/10 px-1.5 py-0.2 text-[9px] font-bold text-slate-400">
+                            OFFLINE ENGINE
+                          </span>
+                        )}
+                      </div>
+                    </div>
                   )}
                 </div>
               </div>
