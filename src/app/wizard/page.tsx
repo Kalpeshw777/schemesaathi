@@ -107,18 +107,22 @@ function AnimatedSelect({
     return list.filter((item) => item.toLowerCase().includes(query));
   }, [items, search]);
 
-  // Focus search input and scroll to selected on open
+  // Focus search input when dropdown opens
   useEffect(() => {
     if (open) {
       setSearch("");
-      const initialIdx = sortedAndFilteredItems.indexOf(value);
-      setHighlightedIndex(initialIdx !== -1 ? initialIdx : 0);
+      setHighlightedIndex(0);
       const timer = setTimeout(() => {
         searchInputRef.current?.focus();
       }, 40);
       return () => clearTimeout(timer);
     }
-  }, [open, sortedAndFilteredItems, value]);
+  }, [open]);
+
+  // Reset highlight index when search query changes
+  useEffect(() => {
+    setHighlightedIndex(0);
+  }, [search]);
 
   // Auto-scroll highlighted item into view during arrow keys
   useEffect(() => {
@@ -224,7 +228,11 @@ function AnimatedSelect({
             {search && (
               <button
                 type="button"
-                onClick={() => setSearch("")}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSearch("");
+                  searchInputRef.current?.focus();
+                }}
                 className="text-[11px] text-slate-400 hover:text-slate-800 dark:hover:text-white px-1"
               >
                 ✕
