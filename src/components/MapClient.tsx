@@ -3,7 +3,6 @@
 import "leaflet/dist/leaflet.css";
 import { useEffect, useRef } from "react";
 import { CircleMarker, MapContainer, TileLayer, Popup, Tooltip, useMap } from "react-leaflet";
-import { useTheme } from "@/context/ThemeContext";
 import type { PartnerWithMeta } from "@/lib/types";
 import L from "leaflet";
 
@@ -68,16 +67,8 @@ export default function MapClient({
   userLocation,
   onSelect,
 }: Props) {
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
-
   const selectedPartner = partners.find((p) => p.id === selectedId) || null;
   const markerRefs = useRef<Record<string, L.CircleMarker>>({});
-
-  // High quality vector-styled raster tiles: CartoDB Voyager for Light, Dark Matter for Dark
-  const tileUrl = isDark
-    ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-    : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
 
   // Automatically open popup when selectedId changes
   useEffect(() => {
@@ -99,11 +90,11 @@ export default function MapClient({
       className="h-full w-full z-0"
       attributionControl={false}
     >
+      {/* 100% Free & Legal OpenStreetMap Official Tile Server (No API Key Required, Zero Watermarks) */}
       <TileLayer
-        key={tileUrl}
-        url={tileUrl}
-        maxZoom={20}
-        subdomains="abcd"
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        maxZoom={19}
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
 
       <MapController
