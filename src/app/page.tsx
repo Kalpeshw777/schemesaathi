@@ -60,7 +60,7 @@ export default function Home() {
               {t("hero_title_2")}
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-200 font-medium">
+          <p className="mx-auto mt-6 max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed text-slate-700 dark:text-slate-200 font-medium">
             {t("hero_desc")}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3.5 sm:flex-row">
@@ -85,7 +85,7 @@ export default function Home() {
             {STATS.map((s, idx) => (
               <div key={idx} className="px-4 text-center">
                 <p className="text-2xl sm:text-3xl font-black text-[#F97316] md:text-4xl">{s.value}</p>
-                <p className="mt-1 text-xs leading-snug text-slate-600 dark:text-slate-200 md:text-sm font-semibold">{s.label}</p>
+                <p className="mt-1 text-xs leading-snug text-slate-700 dark:text-slate-200 md:text-sm font-bold">{s.label}</p>
               </div>
             ))}
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
                 <h3 className="mt-5 text-xl font-bold text-slate-900 dark:text-white group-hover:text-[#F97316] transition-colors">
                   {m.title}
                 </h3>
-                <p className="mt-2.5 flex-1 text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-200 font-medium">{m.desc}</p>
+                <p className="mt-2.5 flex-1 text-xs sm:text-sm leading-relaxed text-slate-700 dark:text-slate-200 font-medium">{m.desc}</p>
                 <Link
                   href={m.href}
                   className="mt-6 inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#F97316] group-hover:text-[#EA580C] transition-colors"
