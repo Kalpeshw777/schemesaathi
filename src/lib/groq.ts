@@ -8,16 +8,19 @@ interface GroqOptions {
   temperature?: number;
   maxTokens?: number;
   jsonMode?: boolean;
+  apiKey?: string;
 }
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 
-// Candidate models in priority order
+// Active candidate models in priority order verified on Groq API
 const CANDIDATE_MODELS = [
   "openai/gpt-oss-120b",
   "openai/gpt-oss-20b",
-  "llama-3.3-70b-versatile",
+  "groq/compound-mini",
+  "qwen/qwen3.8-27b",
   "groq/compound",
+  "qwen/qwen3.6-27b",
 ];
 
 /**
@@ -31,9 +34,10 @@ export async function groqChat(
     temperature = 0.3,
     maxTokens = 800,
     jsonMode = false,
+    apiKey,
   }: GroqOptions = {}
 ): Promise<string | null> {
-  const key = process.env.GROQ_API_KEY;
+  const key = apiKey || process.env.GROQ_API_KEY;
   if (!key) return null;
 
   const modelsToTry = model ? [model, ...CANDIDATE_MODELS.filter((m) => m !== model)] : CANDIDATE_MODELS;
@@ -56,7 +60,7 @@ export async function groqChat(
           Authorization: `Bearer ${key}`,
         },
         body: JSON.stringify(payload),
-        signal: AbortSignal.timeout(12000),
+        signal: AbortSignal.timeout(15000),
       });
 
       if (!res.ok) continue;

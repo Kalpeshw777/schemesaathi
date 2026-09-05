@@ -12,6 +12,10 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [aiModalOpen, setAiModalOpen] = useState(false);
+  const [apiKeyInput, setApiKeyInput] = useState("");
+  const [apiKeyStatus, setApiKeyStatus] = useState<"idle" | "testing" | "valid" | "invalid">("idle");
+  const [statusMsg, setStatusMsg] = useState("");
   const langRef = useRef<HTMLDivElement>(null);
 
   const links = [
@@ -21,6 +25,14 @@ export default function Header() {
     { href: "/checklist", label: t("nav_checklist") },
     { href: "/#learn", label: t("nav_learn") },
   ];
+
+  // Load stored Groq API Key
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("groq-api-key") || "";
+      setApiKeyInput(stored);
+    } catch {}
+  }, []);
 
   // Close language menu on outside click
   useEffect(() => {
@@ -37,6 +49,40 @@ export default function Header() {
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
+
+  const testAndSaveKey = async () => {
+    const clean = apiKeyInput.trim();
+    if (!clean) {
+      localStorage.removeItem("groq-api-key");
+      setApiKeyStatus("idle");
+      setStatusMsg("Key removed. Defaulting to server Groq key / offline engine.");
+      return;
+    }
+    setApiKeyStatus("testing");
+    setStatusMsg("Validating with Groq cloud servers…");
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-groq-key": clean },
+        body: JSON.stringify({
+          messages: [{ role: "user", content: "Ping test" }],
+          apiKey: clean,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok && data.reply) {
+        localStorage.setItem("groq-api-key", clean);
+        setApiKeyStatus("valid");
+        setStatusMsg("✓ Groq API Key verified and active!");
+      } else {
+        setApiKeyStatus("invalid");
+        setStatusMsg("⚠️ Could not verify key. Check your key syntax.");
+      }
+    } catch (e: any) {
+      setApiKeyStatus("invalid");
+      setStatusMsg("⚠️ Verification failed: " + e.message);
+    }
+  };
 
   const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
 
@@ -70,8 +116,25 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Right Action Toolbar: Theme Switcher + Language Switcher + CTA + Mobile Toggle */}
+        {/* Right Action Toolbar */}
         <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Groq AI Status Pill Button */}
+          <button
+            type="button"
+            onClick={() => setAiModalOpen(true)}
+            className="flex items-center gap-1.5 rounded-xl border border-slate-300 dark:border-white/20 liquid-glass-inner px-2.5 py-1.5 text-xs font-bold text-slate-800 dark:text-white hover:border-[#F97316]/50 transition shadow-sm"
+            title="Groq AI Status & Settings"
+          >
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            </span>
+            <span className="text-[#F97316] font-black">Groq AI</span>
+            <span className="text-[10px] bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 px-1 rounded font-extrabold hidden sm:inline">
+              LIVE
+            </span>
+          </button>
+
           {/* Theme Toggle Button (Light/Dark) */}
           <button
             type="button"
@@ -154,6 +217,83 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Groq AI Settings Modal */}
+      {aiModalOpen && (
+        <div
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/70 backdrop-blur-md p-4 animate-in fade-in duration-150"
+          onClick={() => setAiModalOpen(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-3xl liquid-glass p-6 shadow-2xl border border-slate-300 dark:border-white/20"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/10 pb-3">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">✨</span>
+                <h3 className="text-base font-black text-slate-900 dark:text-white">Groq AI Cloud Status</h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setAiModalOpen(false)}
+                className="rounded-lg p-1 text-sm font-bold text-slate-400 hover:text-slate-900 dark:hover:text-white"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="mt-4 space-y-3 text-xs">
+              <div className="rounded-2xl bg-emerald-500/10 border border-emerald-500/30 p-3 flex items-start gap-2.5">
+                <span className="text-emerald-500 font-black text-sm">✓</span>
+                <div>
+                  <p className="font-extrabold text-slate-900 dark:text-white">Groq AI Inference Active</p>
+                  <p className="text-[11px] text-slate-600 dark:text-slate-200 mt-0.5">
+                    Scheme matching, personalized advice, and interactive chat are powered by ultra-low-latency Groq AI.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-bold text-slate-800 dark:text-white mb-1">
+                  Custom Groq API Key (Optional)
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    type="password"
+                    value={apiKeyInput}
+                    onChange={(e) => setApiKeyInput(e.target.value)}
+                    placeholder="gsk_..."
+                    className="flex-1 rounded-xl border border-slate-300 dark:border-white/20 bg-white dark:bg-[#131B2E] px-3 py-2 text-xs text-slate-900 dark:text-white outline-none focus:border-[#F97316]"
+                  />
+                  <button
+                    type="button"
+                    onClick={testAndSaveKey}
+                    disabled={apiKeyStatus === "testing"}
+                    className="rounded-xl bg-[#F97316] hover:bg-[#EA580C] px-3.5 py-2 font-bold text-white transition disabled:opacity-50"
+                  >
+                    {apiKeyStatus === "testing" ? "Testing…" : "Save & Test"}
+                  </button>
+                </div>
+                {statusMsg && (
+                  <p className={`mt-2 text-[11px] font-bold ${apiKeyStatus === "valid" ? "text-emerald-600 dark:text-emerald-400" : apiKeyStatus === "invalid" ? "text-red-500" : "text-slate-500"}`}>
+                    {statusMsg}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            <div className="mt-5 flex justify-end">
+              <button
+                type="button"
+                onClick={() => setAiModalOpen(false)}
+                className="rounded-xl liquid-glass px-4 py-2 text-xs font-bold text-slate-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-200 dark:border-white/10 bg-white/95 dark:bg-[#0B0F19]/95 px-4 py-4 backdrop-blur-xl animate-in fade-in slide-in-from-top-2 duration-150">
@@ -178,3 +318,4 @@ export default function Header() {
     </header>
   );
 }
+
