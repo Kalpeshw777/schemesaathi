@@ -5,7 +5,7 @@ import { useEffect, useState, useMemo, useRef } from "react";
 import SiteBackground from "@/components/SiteBackground";
 import { useJourney } from "@/context/JourneyContext";
 import { useTranslation } from "@/context/LanguageContext";
-import { LOCATIONS } from "@/lib/locations";
+import { getDistrictCoordinates, LOCATIONS } from "@/lib/locations";
 import { formatINR } from "@/lib/format";
 import type { PartnerWithMeta, SchemeId, PartnerType } from "@/lib/types";
 
@@ -264,8 +264,11 @@ export default function LocatorPage() {
     recommendation?.schemeId ?? "all"
   );
   const [typeFilter, setTypeFilter] = useState<PartnerType | "all">("all");
+  const [stateFilter, setStateFilter] = useState<string>(
+    profile?.state || "Delhi"
+  );
   const [districtFilter, setDistrictFilter] = useState<string>(
-    profile?.district || "Nandurbar"
+    profile?.district || "East Delhi"
   );
   const [includeHighNpa, setIncludeHighNpa] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -277,16 +280,22 @@ export default function LocatorPage() {
 
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
-  // Collect all unique districts from all states for dropdown
-  const allDistricts = useMemo(() => {
+  // Collect all unique states
+  const stateOptions = useMemo(() => {
+    return ["All States", ...Object.keys(LOCATIONS).sort((a, b) => a.localeCompare(b))];
+  }, []);
+
+  // Collect districts matching selected state or all
+  const districtOptions = useMemo(() => {
+    if (stateFilter && stateFilter !== "All States" && LOCATIONS[stateFilter]) {
+      return ["All Districts", ...LOCATIONS[stateFilter]];
+    }
     const set = new Set<string>();
     Object.values(LOCATIONS).forEach((distList) => {
       distList.forEach((d) => set.add(d));
     });
-    return Array.from(set).sort((a, b) =>
-      a.localeCompare(b, "en", { sensitivity: "base" })
-    );
-  }, []);
+    return ["All Districts", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+  }, [stateFilter]);
 
   const schemeOptions = ["All Schemes", "Micro Finance", "Term Loan", "Education Loan"];
   const typeOptions = ["All Types", "PSU Bank", "Private Bank", "Govt. Agency", "NBFC", "Co-op Bank"];
@@ -300,7 +309,10 @@ export default function LocatorPage() {
         const params = new URLSearchParams();
         if (schemeFilter !== "all") params.set("scheme", schemeFilter);
         if (typeFilter !== "all") params.set("type", typeFilter);
-        if (districtFilter) params.set("district", districtFilter);
+        if (stateFilter && stateFilter !== "All States") params.set("state", stateFilter);
+        if (districtFilter && districtFilter !== "All Districts" && districtFilter !== "All") {
+          params.set("district", districtFilter);
+        }
         if (includeHighNpa) params.set("includeHighNpa", "true");
         if (userLocation) {
           params.set("lat", userLocation.lat.toString());
@@ -311,9 +323,12 @@ export default function LocatorPage() {
         if (!res.ok) throw new Error("Failed to load channel partners");
         const data = await res.json();
         if (!cancelled) {
-          setPartners(data.partners || []);
-          if (data.partners && data.partners.length > 0 && !selectedId) {
-            setSelectedId(data.partners[0].id);
+          const list: PartnerWithMeta[] = data.partners || [];
+          setPartners(list);
+          if (list.length > 0) {
+            setSelectedId(list[0].id);
+          } else {
+            setSelectedId(null);
           }
         }
       } catch (err) {
@@ -326,7 +341,7 @@ export default function LocatorPage() {
     return () => {
       cancelled = true;
     };
-  }, [schemeFilter, typeFilter, districtFilter, includeHighNpa, userLocation, selectedId]);
+  }, [schemeFilter, typeFilter, stateFilter, districtFilter, includeHighNpa, userLocation]);
 
   // Request browser geolocation
   const requestLocation = () => {
@@ -354,7 +369,7 @@ export default function LocatorPage() {
   // Nearby list filter (<= 500 km or top 30)
   const displayList = useMemo(() => {
     const nearby = partners.filter(
-      (p) => typeof p.distanceKm === "number" && p.distanceKm <= 500
+      (p) => typeof p.distanceKm === "number" && p.distanceKm >= 0 && p.distanceKm <= 500
     );
     return nearby.length > 0 ? nearby : partners.slice(0, 30);
   }, [partners]);
@@ -368,11 +383,19 @@ export default function LocatorPage() {
     if (userLocation) {
       return [userLocation.lat, userLocation.lng];
     }
+    if (districtFilter && districtFilter !== "All Districts" && districtFilter !== "All") {
+      const coords = getDistrictCoordinates(districtFilter, stateFilter);
+      return [coords.lat, coords.lng];
+    }
+    if (stateFilter && stateFilter !== "All States") {
+      const coords = getDistrictCoordinates(undefined, stateFilter);
+      return [coords.lat, coords.lng];
+    }
     if (partners.length > 0) {
       return [partners[0].lat, partners[0].lng];
     }
-    return [21.7469, 74.1415];
-  }, [selectedId, userLocation, partners]);
+    return [28.6139, 77.209]; // Default New Delhi, India
+  }, [selectedId, userLocation, districtFilter, stateFilter, partners]);
 
   // Auto-scroll list when partner is selected on map
   const handleSelectPartner = (id: string | null) => {
@@ -407,7 +430,7 @@ export default function LocatorPage() {
       partnerPhone: partner.phone,
       schemeName,
       loanAmount: loanAmt,
-      applicantDistrict: profile?.district || districtFilter || "Nandurbar",
+      applicantDistrict: profile?.district || districtFilter || "East Delhi",
       applicantCategory: profile?.category?.toUpperCase() || "SC",
       date: new Date().toLocaleDateString("en-IN", {
         day: "numeric",
@@ -458,6 +481,34 @@ export default function LocatorPage() {
         {/* Toolbar Filters */}
         <div className="relative z-40 rounded-3xl liquid-glass p-4 sm:p-5 shadow-sm dark:shadow-2xl mb-6 flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2.5">
+            {/* State Filter */}
+            <LocatorDropdown
+              label={t("wiz_state_lbl") || "State"}
+              value={stateFilter || "All States"}
+              items={stateOptions}
+              onSelect={(val) => {
+                const nextState = val === "All States" ? "" : val;
+                setStateFilter(nextState);
+                if (nextState && LOCATIONS[nextState]) {
+                  setDistrictFilter(LOCATIONS[nextState][0]);
+                } else {
+                  setDistrictFilter("");
+                }
+                setSelectedId(null);
+              }}
+            />
+
+            {/* District Filter */}
+            <LocatorDropdown
+              label={t("loc_dist_lbl")}
+              value={districtFilter || "All Districts"}
+              items={districtOptions}
+              onSelect={(val) => {
+                setDistrictFilter(val === "All Districts" || val === "All" ? "" : val);
+                setSelectedId(null);
+              }}
+            />
+
             {/* Scheme Filter */}
             <LocatorDropdown
               label="Scheme"
@@ -484,14 +535,6 @@ export default function LocatorPage() {
                 else if (val === "Co-op Bank") setTypeFilter("cooperative");
                 else setTypeFilter("all");
               }}
-            />
-
-            {/* District Filter */}
-            <LocatorDropdown
-              label={t("loc_dist_lbl")}
-              value={districtFilter || "All"}
-              items={["All", ...allDistricts]}
-              onSelect={(val) => setDistrictFilter(val === "All" ? "" : val)}
             />
           </div>
 

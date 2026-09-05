@@ -8,6 +8,7 @@ export async function GET(request: Request) {
 
   const rawLat = url.searchParams.get("userLat") || url.searchParams.get("lat");
   const rawLng = url.searchParams.get("userLng") || url.searchParams.get("lng");
+  const state = url.searchParams.get("state") || undefined;
   const district = url.searchParams.get("district") || undefined;
   const scheme = url.searchParams.get("scheme") as SchemeId | null;
   const partnerType = url.searchParams.get("type");
@@ -19,7 +20,7 @@ export async function GET(request: Request) {
   const userLat = rawLat ? Number(rawLat) : undefined;
   const userLng = rawLng ? Number(rawLng) : undefined;
 
-  let partners = getAllPartners(district, userLat, userLng);
+  let partners = getAllPartners(district, userLat, userLng, state);
 
   // Apply scheme filter
   if (scheme && scheme !== ("all" as any)) {
@@ -36,10 +37,10 @@ export async function GET(request: Request) {
     partners = partners.filter((p) => p.healthStatus !== "red");
   }
 
-  // Multi-tier sorting:
-  // Tier 1: Healthy (<5% NPA, green) sorted by nearest distance
-  // Tier 2: Watchlist (5-10% NPA, yellow) sorted by nearest distance
-  // Tier 3: High NPA (≥10% NPA, red) sorted by nearest distance (when toggled on)
+  // Sorting:
+  // When distance is available (from GPS or district selection), sort primarily by proximity (distanceKm ascending),
+  // with lower NPA as tie-breaker for branches at similar distances.
+  // When distance is not available, sort by Health Tier (Healthy <5% -> Watchlist 5-10% -> High NPA >=10%) and lowest NPA.
   const TIER_WEIGHT: Record<string, number> = {
     green: 1,
     yellow: 2,
@@ -47,16 +48,23 @@ export async function GET(request: Request) {
   };
 
   partners.sort((a, b) => {
+    const hasDistA = typeof a.distanceKm === "number" && a.distanceKm >= 0;
+    const hasDistB = typeof b.distanceKm === "number" && b.distanceKm >= 0;
+
+    if (hasDistA && hasDistB) {
+      const distDiff = a.distanceKm - b.distanceKm;
+      if (Math.abs(distDiff) >= 0.1) {
+        return distDiff;
+      }
+      return a.npaPercent - b.npaPercent;
+    }
+
+    if (hasDistA) return -1;
+    if (hasDistB) return 1;
+
     const tierA = TIER_WEIGHT[a.healthStatus] || 2;
     const tierB = TIER_WEIGHT[b.healthStatus] || 2;
-
-    if (tierA !== tierB) {
-      return tierA - tierB;
-    }
-
-    if (typeof a.distanceKm === "number" && typeof b.distanceKm === "number" && a.distanceKm >= 0 && b.distanceKm >= 0) {
-      return a.distanceKm - b.distanceKm;
-    }
+    if (tierA !== tierB) return tierA - tierB;
 
     return a.npaPercent - b.npaPercent;
   });

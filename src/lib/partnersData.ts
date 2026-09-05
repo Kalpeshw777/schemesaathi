@@ -1,5 +1,5 @@
 import staticPartners from "@/data/partners.json";
-import { DISTRICT_COORDS, LOCATIONS } from "@/lib/locations";
+import { getDistrictCoordinates, LOCATIONS } from "@/lib/locations";
 import { haversineKm, healthStatus } from "@/lib/geo";
 import type { Partner, PartnerWithMeta, SchemeId, PartnerType } from "@/lib/types";
 
@@ -19,24 +19,27 @@ const BANK_NAMES = [
 /**
  * Returns complete official channel partner branches for a specific district.
  */
-export function getPartnersForDistrict(districtName: string): Partner[] {
+export function getPartnersForDistrict(districtName: string, stateHint?: string): Partner[] {
+  const cleanDist = districtName.trim();
   const existing = (staticPartners as any[]).filter(
-    (p) => p.district?.toLowerCase() === districtName.toLowerCase()
+    (p) => p.district?.toLowerCase() === cleanDist.toLowerCase()
   );
 
   if (existing.length >= 4) {
     return existing;
   }
 
-  let stateName = "Maharashtra";
-  for (const [s, dists] of Object.entries(LOCATIONS)) {
-    if (dists.some((d) => d.toLowerCase() === districtName.toLowerCase())) {
-      stateName = s;
-      break;
+  let stateName = stateHint || "Delhi";
+  if (!stateHint) {
+    for (const [s, dists] of Object.entries(LOCATIONS)) {
+      if (dists.some((d) => d.toLowerCase() === cleanDist.toLowerCase())) {
+        stateName = s;
+        break;
+      }
     }
   }
 
-  const center = DISTRICT_COORDS[districtName] || { lat: 19.076, lng: 72.8777 };
+  const center = getDistrictCoordinates(cleanDist, stateName);
 
   const generated: Partner[] = BANK_NAMES.map((b, idx) => {
     const angle = (idx * (360 / BANK_NAMES.length) * Math.PI) / 180;
@@ -44,20 +47,20 @@ export function getPartnersForDistrict(districtName: string): Partner[] {
     const latOffset = (distanceKm / 111) * Math.cos(angle);
     const lngOffset = (distanceKm / (111 * Math.cos((center.lat * Math.PI) / 180))) * Math.sin(angle);
 
-    const branchName = idx === 5 ? `${districtName} SCA Head Office` : `${b.name}, ${districtName} Main Branch`;
+    const branchName = idx === 5 ? `${cleanDist} SCA Head Office` : `${b.name}, ${cleanDist} Main Branch`;
     const street = idx % 3 === 0 ? "Collectorate Road, Civil Lines" : idx % 3 === 1 ? "Station Road, Ambedkar Chowk" : "Market Yard, Main Bazaar";
 
     return {
-      id: `CP-GEN-${districtName.toUpperCase().replace(/[\s()]+/g, "_")}-${idx + 1}`,
+      id: `CP-GEN-${cleanDist.toUpperCase().replace(/[\s()]+/g, "_")}-${idx + 1}`,
       name: branchName,
       type: b.type,
       schemes: b.schemes,
       npaPercent: b.npa,
       address: `Plot ${100 + idx * 17}, ${street}`,
-      city: districtName,
-      district: districtName,
+      city: cleanDist,
+      district: cleanDist,
       state: stateName,
-      pincode: `${400000 + (Math.abs(Math.round(center.lat * 100)) % 90000)}`,
+      pincode: `${110000 + (Math.abs(Math.round(center.lat * 100)) % 80000)}`,
       phone: `+91 ${9400000000 + (idx * 7919 + Math.abs(Math.round(center.lng * 1000))) % 99999999}`,
       lat: Math.round((center.lat + latOffset) * 10000) / 10000,
       lng: Math.round((center.lng + lngOffset) * 10000) / 10000,
@@ -75,7 +78,8 @@ export function getPartnersForDistrict(districtName: string): Partner[] {
 export function getAllPartners(
   targetDistrict?: string,
   userLat?: number,
-  userLng?: number
+  userLng?: number,
+  targetState?: string
 ): PartnerWithMeta[] {
   const map = new Map<string, Partner>();
 
@@ -86,9 +90,18 @@ export function getAllPartners(
 
   // 2. If a specific district is targeted, generate/ensure local branches for it
   if (targetDistrict && targetDistrict.trim() !== "" && targetDistrict.toLowerCase() !== "all") {
-    const districtPartners = getPartnersForDistrict(targetDistrict.trim());
+    const districtPartners = getPartnersForDistrict(targetDistrict.trim(), targetState);
     for (const dp of districtPartners) {
       map.set(dp.id, dp);
+    }
+  } else if (targetState && targetState.trim() !== "" && targetState.toLowerCase() !== "all") {
+    const stateDistricts = LOCATIONS[targetState] || [];
+    if (stateDistricts.length > 0) {
+      const sampleDist = stateDistricts[0];
+      const dpList = getPartnersForDistrict(sampleDist, targetState);
+      for (const dp of dpList) {
+        map.set(dp.id, dp);
+      }
     }
   }
 
@@ -98,11 +111,19 @@ export function getAllPartners(
   let refLat: number | undefined = userLat;
   let refLng: number | undefined = userLng;
 
-  if ((refLat === undefined || refLng === undefined || isNaN(refLat) || isNaN(refLng)) && targetDistrict) {
-    const coords = DISTRICT_COORDS[targetDistrict];
-    if (coords) {
-      refLat = coords.lat;
-      refLng = coords.lng;
+  if (refLat === undefined || refLng === undefined || isNaN(refLat) || isNaN(refLng)) {
+    if (targetDistrict && targetDistrict.trim() !== "" && targetDistrict.toLowerCase() !== "all") {
+      const coords = getDistrictCoordinates(targetDistrict, targetState);
+      if (coords) {
+        refLat = coords.lat;
+        refLng = coords.lng;
+      }
+    } else if (targetState && targetState.trim() !== "" && targetState.toLowerCase() !== "all") {
+      const coords = getDistrictCoordinates(undefined, targetState);
+      if (coords) {
+        refLat = coords.lat;
+        refLng = coords.lng;
+      }
     }
   }
 
