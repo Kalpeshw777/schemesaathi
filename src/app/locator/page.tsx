@@ -6,6 +6,7 @@ import SiteBackground from "@/components/SiteBackground";
 import { useJourney } from "@/context/JourneyContext";
 import { useTranslation } from "@/context/LanguageContext";
 import { LOCATIONS } from "@/lib/locations";
+import { formatINR } from "@/lib/format";
 import type { PartnerWithMeta, SchemeId, PartnerType } from "@/lib/types";
 
 // Dynamic import for Leaflet Map to avoid SSR issues
@@ -15,7 +16,7 @@ const MapClient = dynamic(() => import("@/components/MapClient"), {
     <div className="flex h-full w-full items-center justify-center bg-slate-100 dark:bg-[#0B0F19] text-xs font-bold text-slate-500 dark:text-slate-400">
       <div className="flex flex-col items-center gap-2">
         <div className="h-8 w-8 animate-spin rounded-full border-3 border-[#F97316]/20 border-t-[#F97316]" />
-        <span>Loading Interactive All-India Map…</span>
+        <span>Loading Interactive Sovereign Map…</span>
       </div>
     </div>
   ),
@@ -40,6 +41,19 @@ const HEALTH_PILL: Record<"green" | "yellow" | "red", string> = {
   yellow: "bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30 font-bold",
   red: "bg-rose-500/15 text-rose-700 dark:text-rose-400 border border-rose-500/30 font-bold",
 };
+
+interface ApplicationDossier {
+  refNumber: string;
+  partnerName: string;
+  partnerAddress: string;
+  partnerCity: string;
+  partnerPhone?: string;
+  schemeName: string;
+  loanAmount: number;
+  applicantDistrict: string;
+  applicantCategory: string;
+  date: string;
+}
 
 interface LocatorDropdownProps {
   label: string;
@@ -258,6 +272,9 @@ export default function LocatorPage() {
   const [geoLocating, setGeoLocating] = useState(false);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
 
+  // Application Dossier State
+  const [activeDossier, setActiveDossier] = useState<ApplicationDossier | null>(null);
+
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   // Collect all unique districts from all states for dropdown
@@ -365,6 +382,52 @@ export default function LocatorPage() {
     }
   };
 
+  // Handle "Send My Application to This Partner"
+  const handleSendApplication = (partner: PartnerWithMeta) => {
+    const randomSuffix = Math.floor(100000 + Math.random() * 900000);
+    const refNum = `SS-2026-${randomSuffix}`;
+
+    const loanAmt =
+      recommendation?.eligibleAmount ||
+      (profile?.projectCost ? Math.round(profile.projectCost * 0.9) : 140000);
+
+    const schemeName =
+      recommendation?.schemeName ||
+      (profile?.purpose === "education"
+        ? "Educational Loan Scheme"
+        : (profile?.projectCost || 140000) <= 140000
+        ? "Micro Finance Scheme"
+        : "Term Loan Scheme");
+
+    const dossier: ApplicationDossier = {
+      refNumber: refNum,
+      partnerName: partner.name,
+      partnerAddress: `${partner.address}, ${partner.district}, ${partner.state}`,
+      partnerCity: partner.city,
+      partnerPhone: partner.phone,
+      schemeName,
+      loanAmount: loanAmt,
+      applicantDistrict: profile?.district || districtFilter || "Nandurbar",
+      applicantCategory: profile?.category?.toUpperCase() || "SC",
+      date: new Date().toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      }),
+    };
+
+    setActiveDossier(dossier);
+
+    // Save to localStorage
+    try {
+      const existing = JSON.parse(
+        localStorage.getItem("schemesaathi_applications") || "[]"
+      );
+      existing.unshift(dossier);
+      localStorage.setItem("schemesaathi_applications", JSON.stringify(existing.slice(0, 10)));
+    } catch {}
+  };
+
   return (
     <div className="relative min-h-screen text-[var(--foreground)] py-8 sm:py-12 px-3 sm:px-4 selection:bg-[#F97316] selection:text-white">
       {/* Static Minimalist Ambient Background */}
@@ -372,16 +435,24 @@ export default function LocatorPage() {
 
       <div className="relative z-10 mx-auto max-w-6xl">
         {/* Header Title */}
-        <div className="text-center sm:text-left mb-6">
-          <span className="inline-block rounded-full liquid-glass-active px-3.5 py-1 text-xs font-bold tracking-wide uppercase shadow-sm">
-            {t("loc_tag")}
-          </span>
-          <h1 className="mt-2.5 text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight md:text-4xl">
-            {t("loc_title")}
-          </h1>
-          <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-200 font-medium">
-            {t("loc_sub")}
-          </p>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+          <div>
+            <span className="inline-block rounded-full liquid-glass-active px-3.5 py-1 text-xs font-bold tracking-wide uppercase shadow-sm">
+              {t("loc_tag")}
+            </span>
+            <h1 className="mt-2.5 text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight md:text-4xl">
+              {t("loc_title")}
+            </h1>
+            <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-200 font-medium">
+              {t("loc_sub")}
+            </p>
+          </div>
+
+          {/* Sovereign Boundary Status Badge */}
+          <div className="rounded-2xl liquid-glass border border-slate-300 dark:border-white/20 px-3.5 py-2 text-xs font-bold text-slate-800 dark:text-white flex items-center gap-2 self-start sm:self-auto shadow-sm">
+            <span>🇮🇳</span>
+            <span>Survey of India Compliant Map</span>
+          </div>
         </div>
 
         {/* Toolbar Filters */}
@@ -436,7 +507,7 @@ export default function LocatorPage() {
               <span>{geoLocating ? "Locating…" : t("loc_near_me")}</span>
             </button>
 
-            {/* High NPA Toggle */}
+            {/* High NPA Toggle: Off by default */}
             <label className="flex items-center gap-2 text-xs font-bold text-slate-700 dark:text-slate-200 cursor-pointer liquid-glass-inner px-3 py-2 rounded-xl">
               <input
                 type="checkbox"
@@ -452,14 +523,14 @@ export default function LocatorPage() {
         {/* Proximity Status Pill */}
         <div className="relative z-10 mb-4 flex flex-wrap items-center justify-between text-xs text-[#EA580C] dark:text-[#FED7AA] font-bold px-1">
           <span>
-            📍 Showing <strong className="text-slate-900 dark:text-white font-black">{displayList.length}</strong> nearby branches (within 500 km range)
+            📍 Showing <strong className="text-slate-900 dark:text-white font-black">{displayList.length}</strong> nearby branches (Healthy & Watchlist first)
           </span>
           <span className="text-slate-600 dark:text-slate-300 font-medium">
-            🗺️ <strong className="text-slate-900 dark:text-white font-bold">{partners.length}</strong> offices across all of India on Map
+            🗺️ <strong className="text-slate-900 dark:text-white font-bold">{partners.length}</strong> branches across India on Sovereign Map
           </span>
         </div>
 
-        {/* Content Layout: Left Partner List (<=500km), Right Map (All India) */}
+        {/* Content Layout: Left Partner List, Right Map */}
         <div className="relative z-10 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1.15fr]">
           {/* Nearby Partners List */}
           <div className="space-y-3.5 max-h-[620px] overflow-y-auto pr-1 scrollable-touch">
@@ -473,8 +544,8 @@ export default function LocatorPage() {
             ) : displayList.length === 0 ? (
               <div className="flex h-64 flex-col items-center justify-center rounded-3xl liquid-glass p-6 text-center">
                 <span className="text-3xl mb-2">🔍</span>
-                <p className="text-sm font-bold text-slate-900 dark:text-white">No partner branches within 500 km match this filter.</p>
-                <p className="text-xs text-slate-500 dark:text-slate-300 mt-1">Try zooming out on the map or changing district.</p>
+                <p className="text-sm font-bold text-slate-900 dark:text-white">No partner branches match this filter.</p>
+                <p className="text-xs text-slate-500 dark:text-slate-300 mt-1">Try toggling &ldquo;Show high-NPA partners&rdquo; or changing district.</p>
               </div>
             ) : (
               displayList.map((p, idx) => (
@@ -508,7 +579,7 @@ export default function LocatorPage() {
                     </div>
 
                     <span className={`rounded-xl px-2.5 py-1 text-[11px] whitespace-nowrap ${HEALTH_PILL[p.healthStatus]}`}>
-                      {p.healthStatus === "green" ? "Healthy" : p.healthStatus === "yellow" ? "Watchlist" : "High NPA"} ({p.npaPercent}% NPA)
+                      {p.healthStatus === "green" ? "Healthy (<5% NPA)" : p.healthStatus === "yellow" ? "Watchlist (5-10% NPA)" : "High NPA (≥10%)"} ({p.npaPercent}% NPA)
                     </span>
                   </div>
 
@@ -517,7 +588,7 @@ export default function LocatorPage() {
                     📍 {p.address} {p.pincode && `— ${p.pincode}`}
                   </p>
 
-                  <div className="mt-4 flex items-center justify-between pt-3 border-t border-slate-200 dark:border-white/10 text-xs">
+                  <div className="mt-4 flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-slate-200 dark:border-white/10 text-xs">
                     <div className="flex items-center gap-2">
                       <span className="rounded-lg liquid-glass-inner px-2.5 py-1 text-[11px] font-bold text-[#EA580C] dark:text-[#FED7AA]">
                         {TYPE_LABELS[p.type]}
@@ -529,7 +600,7 @@ export default function LocatorPage() {
                       )}
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       {p.phone && (
                         <a
                           href={`tel:${p.phone}`}
@@ -544,10 +615,21 @@ export default function LocatorPage() {
                         target="_blank"
                         rel="noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="rounded-lg bg-[#F97316] px-2.5 py-1 font-bold text-white hover:bg-[#EA580C] transition"
+                        className="rounded-lg liquid-glass-inner px-2.5 py-1 font-bold text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition"
                       >
                         {t("loc_directions")}
                       </a>
+                      {/* Send Application CTA Button */}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleSendApplication(p);
+                        }}
+                        className="rounded-lg bg-[#F97316] px-3 py-1 font-bold text-white hover:bg-[#EA580C] shadow-md shadow-orange-500/20 transition hover:scale-[1.02]"
+                      >
+                        {t("loc_btn_send_app")} →
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -555,7 +637,7 @@ export default function LocatorPage() {
             )}
           </div>
 
-          {/* Interactive Map with All-India Network */}
+          {/* Interactive Map (Survey of India Sovereign Boundary Compliant) */}
           <div className="h-[480px] lg:h-[620px] rounded-3xl overflow-hidden liquid-glass border border-slate-300 dark:border-white/15 shadow-sm dark:shadow-2xl relative">
             <MapClient
               partners={partners}
@@ -568,6 +650,101 @@ export default function LocatorPage() {
           </div>
         </div>
       </div>
+
+      {/* Application Confirmation Modal */}
+      {activeDossier && (
+        <div
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/70 backdrop-blur-md p-4 animate-in fade-in duration-200"
+          onClick={() => setActiveDossier(null)}
+        >
+          <div
+            className="w-full max-w-xl rounded-3xl liquid-glass p-6 sm:p-8 shadow-2xl border border-slate-300 dark:border-white/20 animate-in zoom-in-95 duration-150"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-start justify-between gap-3 border-b border-slate-200 dark:border-white/10 pb-4">
+              <div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 px-3 py-0.5 text-[10px] font-black uppercase text-emerald-700 dark:text-emerald-400 border border-emerald-500/40 mb-1.5">
+                  <span>✓</span>
+                  <span>{t("modal_submitted_badge")}</span>
+                </div>
+                <h3 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white">
+                  {t("modal_app_title")}
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-200 font-medium mt-0.5">
+                  {t("modal_app_sub")}
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setActiveDossier(null)}
+                className="rounded-xl liquid-glass-inner p-2 text-slate-400 hover:text-slate-900 dark:hover:text-white font-bold"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Dossier Summary Box */}
+            <div className="my-4 rounded-2xl liquid-glass-inner p-4 space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 dark:border-white/10 pb-2.5">
+                <span className="text-xs text-slate-500 dark:text-slate-300 font-semibold">{t("modal_ref_lbl")}:</span>
+                <span className="font-mono text-sm font-black text-[#F97316] bg-orange-500/10 px-2.5 py-0.5 rounded-lg border border-orange-500/30">
+                  {activeDossier.refNumber}
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div>
+                  <span className="text-[11px] text-slate-500 dark:text-slate-300 font-semibold block">{t("modal_partner_lbl")}</span>
+                  <strong className="text-slate-900 dark:text-white font-black block mt-0.5">{activeDossier.partnerName}</strong>
+                  <span className="text-[11px] text-slate-600 dark:text-slate-200 block">{activeDossier.partnerAddress}</span>
+                </div>
+                <div>
+                  <span className="text-[11px] text-slate-500 dark:text-slate-300 font-semibold block">{t("modal_scheme_lbl")}</span>
+                  <strong className="text-slate-900 dark:text-white font-black block mt-0.5">{activeDossier.schemeName}</strong>
+                  <span className="text-[11px] font-bold text-[#F97316] block mt-0.5">
+                    {t("modal_amount_lbl")}: {formatINR(activeDossier.loanAmount)}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Next Steps Guidance */}
+            <div className="rounded-2xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/20 p-4 text-xs space-y-2">
+              <p className="font-black text-slate-900 dark:text-white text-xs uppercase tracking-wider text-[#EA580C] dark:text-[#FED7AA]">
+                📋 {t("modal_next_title")}
+              </p>
+              <p className="text-slate-700 dark:text-slate-200 font-medium">
+                {t("modal_step_1")}
+              </p>
+              <p className="text-slate-700 dark:text-slate-200 font-medium">
+                {t("modal_step_2")}
+              </p>
+              <p className="text-slate-700 dark:text-slate-200 font-medium">
+                {t("modal_step_3")}
+              </p>
+            </div>
+
+            {/* Modal Actions */}
+            <div className="mt-5 flex flex-wrap items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="rounded-xl liquid-glass px-4 py-2.5 text-xs font-bold text-slate-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition"
+              >
+                🖨️ {t("modal_btn_print")}
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveDossier(null)}
+                className="rounded-xl bg-[#F97316] hover:bg-[#EA580C] text-white px-5 py-2.5 text-xs font-black shadow-lg shadow-orange-500/25 transition"
+              >
+                {t("modal_btn_done")}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

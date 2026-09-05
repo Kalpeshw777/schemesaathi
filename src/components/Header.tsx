@@ -19,6 +19,7 @@ export default function Header() {
     { href: "/calculator", label: t("nav_calculator") },
     { href: "/locator", label: t("nav_locator") },
     { href: "/checklist", label: t("nav_checklist") },
+    { href: "/#learn", label: t("nav_learn") },
   ];
 
   // Close language menu on outside click
@@ -54,11 +55,11 @@ export default function Header() {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-1 rounded-2xl liquid-glass-inner p-1">
-          {links.slice(0, 4).map((l) => (
+          {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className={`whitespace-nowrap rounded-xl px-3 py-1.5 text-xs font-bold transition-all lg:px-4 lg:py-2 lg:text-sm ${
+              className={`whitespace-nowrap rounded-xl px-2.5 py-1.5 text-xs font-bold transition-all lg:px-3.5 lg:py-2 lg:text-sm ${
                 pathname === l.href
                   ? "liquid-glass-active shadow-sm"
                   : "text-slate-700 dark:text-slate-200 hover:bg-black/5 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white"

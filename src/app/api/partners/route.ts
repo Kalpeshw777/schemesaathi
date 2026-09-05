@@ -21,26 +21,43 @@ export async function GET(request: Request) {
 
   let partners = getAllPartners(district, userLat, userLng);
 
-  // Apply filters
+  // Apply scheme filter
   if (scheme && scheme !== ("all" as any)) {
     partners = partners.filter((p) => p.schemes.includes(scheme));
   }
 
+  // Apply partner type filter
   if (partnerType && partnerType !== "all") {
     partners = partners.filter((p) => p.type === partnerType);
   }
 
+  // High-NPA filter: default to hiding High-NPA (≥10%) partners unless toggle is enabled
   if (!includeHighNpa) {
     partners = partners.filter((p) => p.healthStatus !== "red");
   }
 
-  // Ensure sorting by nearest distance first
+  // Multi-tier sorting:
+  // Tier 1: Healthy (<5% NPA, green) sorted by nearest distance
+  // Tier 2: Watchlist (5-10% NPA, yellow) sorted by nearest distance
+  // Tier 3: High NPA (≥10% NPA, red) sorted by nearest distance (when toggled on)
+  const TIER_WEIGHT: Record<string, number> = {
+    green: 1,
+    yellow: 2,
+    red: 3,
+  };
+
   partners.sort((a, b) => {
-    if (a.distanceKm >= 0 && b.distanceKm >= 0) {
+    const tierA = TIER_WEIGHT[a.healthStatus] || 2;
+    const tierB = TIER_WEIGHT[b.healthStatus] || 2;
+
+    if (tierA !== tierB) {
+      return tierA - tierB;
+    }
+
+    if (typeof a.distanceKm === "number" && typeof b.distanceKm === "number" && a.distanceKm >= 0 && b.distanceKm >= 0) {
       return a.distanceKm - b.distanceKm;
     }
-    if (a.distanceKm >= 0) return -1;
-    if (b.distanceKm >= 0) return 1;
+
     return a.npaPercent - b.npaPercent;
   });
 

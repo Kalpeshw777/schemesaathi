@@ -23,21 +23,21 @@ export default function Footer() {
         <div className="mt-3 mx-auto max-w-3xl rounded-2xl liquid-glass-inner p-4 border border-slate-300 dark:border-white/15 text-xs sm:text-sm font-semibold leading-relaxed text-slate-700 dark:text-slate-100 shadow-sm dark:shadow-xl text-left sm:text-center">
           {lang === "hi" ? (
             <p>
-              ⚠️ <strong className="text-[#EA580C] dark:text-[#FED7AA]">अस्वीकरण (Disclaimer):</strong> यह वेब एप्लिकेशन स्मार्ट इंडिया हैकथॉन (SIH26092) के लिए विकसित एक प्रोटोटाइप है। सभी ऋण योजना पैरामीटर और ब्याज दरें सामाजिक न्याय और अधिकारिता मंत्रालय (NSFDC / Stand-Up India / MUDRA) के आधिकारिक दिशा-निर्देशों पर आधारित हैं। ऋण के अंतिम संवितरण से पहले कृपया अपनी अधिकृत चैनल पार्टनर बैंक शाखा से दस्तावेज़ों की पुष्टि अवश्य करें।
+              ⚠️ <strong className="text-[#EA580C] dark:text-[#FED7AA]">अस्वीकरण (Disclaimer):</strong> यह स्मार्ट इंडिया हैकथॉन (SIH26092) के लिए विकसित एक प्रोटोटाइप है। योजना के पैरामीटर, ब्याज दरें और ऋण सीमाएं सामाजिक न्याय और अधिकारिता मंत्रालय (NSFDC, Stand-Up India, MUDRA) के सार्वजनिक रूप से प्रकाशित दिशा-निर्देशों के अनुरूप हैं। अंतिम स्वीकृति से पहले हमेशा अपने अधिकृत चैनल पार्टनर से वर्तमान योजना विवरण और आवश्यक दस्तावेज़ों की पुष्टि करें।
             </p>
           ) : lang === "mr" ? (
             <p>
-              ⚠️ <strong className="text-[#EA580C] dark:text-[#FED7AA]">अस्वीकरण (Disclaimer):</strong> हे वेब ॲप्लिकेशन स्मार्ट इंडिया हॅकाथॉन (SIH26092) साठी विकसित केलेले प्रोटोटाइप आहे. सर्व कर्ज योजना आणि सवलतीचे व्याजदर सामाजिक न्याय आणि सक्षमीकरण मंत्रालय (NSFDC / Stand-Up India / MUDRA) च्या मार्गदर्शक तत्त्वांनुसार आहेत. अंतिम कर्ज मंजुरीपूर्वी कृपया आपल्या अधिकृत चॅनल पार्टनर बँकेत कागदपत्रांची पडताळणी करा.
+              ⚠️ <strong className="text-[#EA580C] dark:text-[#FED7AA]">अस्वीकरण (Disclaimer):</strong> हे स्मार्ट इंडिया हॅकाथॉन (SIH26092) साठी तयार केलेले प्रोटोटाइप आहे. योजनेचे नियम, व्याजदर आणि कर्जाची मर्यादा सामाजिक न्याय आणि सक्षमीकरण मंत्रालय (NSFDC, Stand-Up India, MUDRA) च्या सार्वजनिक मार्गदर्शक तत्त्वांनुसार आहेत. अंतिम कर्ज मंजुरीपूर्वी कृपया आपल्या अधिकृत चॅनल पार्टनर बँकेत चालू योजना तपशील आणि आवश्यक कागदपत्रांची खात्री करा.
             </p>
           ) : (
             <p>
-              ⚠️ <strong className="text-[#EA580C] dark:text-[#FED7AA]">Disclaimer:</strong> This application is an official prototype developed for the Smart India Hackathon (SIH26092). All scheme parameters, concessional interest rates, and loan caps are aligned with official Ministry of Social Justice and Empowerment (NSFDC, Stand-Up India, MUDRA) guidelines. Always verify required branch documentation with your authorised Channel Partner before final sanction.
+              ⚠️ <strong className="text-[#EA580C] dark:text-[#FED7AA]">Disclaimer:</strong> This is a prototype built for Smart India Hackathon (SIH26092). Scheme parameters, interest rates, and loan limits are aligned with publicly published Ministry of Social Justice and Empowerment (NSFDC, Stand-Up India, MUDRA) guidelines. Always verify current scheme details and required documentation with your authorised Channel Partner before final sanction.
             </p>
           )}
         </div>
 
         <p className="mt-3 text-[11px] text-[#EA580C] dark:text-[#FED7AA] font-bold">
-          © 2026 SchemeSaathi · Built with Pride for SC Entrepreneurship & Higher Education
+          © 2026 SchemeSaathi · Built for SC Entrepreneurship & Higher Education
         </p>
       </div>
     </footer>
